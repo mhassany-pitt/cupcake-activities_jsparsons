@@ -1,0 +1,64 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_simple_function_en
+source: main_en.py
+title: Simple Function
+description: Construct a program that prints out Hello functions.
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:DefiningSimpleFunction
+  - alice_expert:CallingSimpleFunction
+  - alice_expert:Printing
+  - alice_expert:CallingLibraryFunction
+  - parser:Call
+  - parser:Str
+  - parser:FunctionDef
+  - unspecified:Call
+  - unspecified:FunctionDef
+  - unspecified:Str
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CallingSimpleFunction
+  - rafaella_alice:DefiningSimpleFunction
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program that prints out Hello functions.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    Hello functions!
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def func():'
+  choices:
+  - snippet: 'def func():'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("Hello functions!")
+  choices:
+  - snippet: print("Hello functions!")
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: func()
+  choices:
+  - snippet: func()
+    role: solution
+    indent: 0

@@ -1,0 +1,97 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_return_bigger_or_none_en
+source: main_en.py
+title: Return Bigger or None
+description: Construct a function that returns the bigger value of the given arguments. If a and b are equal, it should return
+  None.
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:DefiningSimpleFunction
+  - alice_expert:BooleanEvaluating
+  - alice_expert:IfElifChecking
+  - parser:Gt
+  - parser:Return
+  - parser:Lt
+  - parser:arg
+  - parser:FunctionDef
+  - parser:If
+  - unspecified:Gt
+  - unspecified:arg
+  - unspecified:Return
+  - unspecified:FunctionDef
+  - unspecified:Lt
+  - unspecified:If
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:DefiningSimpleFunction
+  - rafaella_alice:IfElifChecking
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a function that returns the bigger value of the given arguments. If a and b are equal, it should return
+  None.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: pass
+  choices:
+  - snippet: pass
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'def return_bigger_or_none(a,b):'
+  choices:
+  - snippet: 'def return_bigger_or_none(a,b):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: return a
+  choices:
+  - snippet: return a
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if a <span class="jsparson-toggle" data-type="ab"></span> b:'
+  choices:
+  - snippet: 'if a <span class="jsparson-toggle" data-type="ab"></span> b:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: return b
+  choices:
+  - snippet: return b
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'elif a <span class="jsparson-toggle" data-type="ab"></span> b:'
+  choices:
+  - snippet: 'elif a <span class="jsparson-toggle" data-type="ab"></span> b:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: return None
+  choices:
+  - snippet: return None
+    role: solution
+    indent: 0

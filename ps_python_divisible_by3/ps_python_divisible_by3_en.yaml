@@ -1,0 +1,155 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_divisible_by3_en
+source: main_en.py
+title: Construct a program with multiple if-elif statements
+description: Construct a program which checks which of the integers in interval from 1 to 50 is divisible by only 2, only
+  5, or both. The program should store each group in its own list and finally print the lists in this order.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program which checks which of the integers in interval from 1 to 50 is divisible by only 2, only 5,
+  or both. The program should store each group in its own list and finally print the lists in this order.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    divisible by only 2:
+    [10, 20, 30, 40, 50]
+    divisible by only 5:
+    [2, 4, 6, 8, 12, 14, 16, 18, 22, 24, 26, 28, 32, 34, 36, 38, 42, 44, 46, 48]
+    divisible by 2 & 5:
+    [5, 15, 25, 35, 45]
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: num = 50
+  choices:
+  - snippet: num = 50
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: list = []
+  choices:
+  - snippet: list = []
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: list2= []
+  choices:
+  - snippet: list2= []
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: list3= []
+  choices:
+  - snippet: list3= []
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for i in range(1, num + 1):'
+  choices:
+  - snippet: 'for i in range(1, num + 1):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if i % 2 == 0 and i % 5 == 0:'
+  choices:
+  - snippet: 'if i % 2 == 0 and i % 5 == 0:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: list.append(i)
+  choices:
+  - snippet: list.append(i)
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'elif i % 2 == 0:'
+  choices:
+  - snippet: 'elif i % 2 == 0:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: list2.append(i)
+  choices:
+  - snippet: list2.append(i)
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'elif i % 5 == 0:'
+  choices:
+  - snippet: 'elif i % 5 == 0:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: list3.append(i)
+  choices:
+  - snippet: list3.append(i)
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print("divisible by only 2:")
+  choices:
+  - snippet: print("divisible by only 2:")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(list)
+  choices:
+  - snippet: print(list)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("divisible by only 5:")
+  choices:
+  - snippet: print("divisible by only 5:")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(list2)
+  choices:
+  - snippet: print(list2)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("divisible by 2 & 5:")
+  choices:
+  - snippet: print("divisible by 2 & 5:")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(list3)
+  choices:
+  - snippet: print(list3)
+    role: solution
+    indent: 0

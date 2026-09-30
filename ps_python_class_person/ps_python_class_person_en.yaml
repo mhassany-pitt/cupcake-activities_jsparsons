@@ -1,0 +1,105 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_class_person_en
+source: main_en.py
+title: Clss Person
+description: Write a program that will print out "Safiira. Nice to meet you!"
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:CallingObjectMethod
+  - alice_expert:DefiningObjectMethod
+  - alice_expert:DefiningClass
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CreatingObject
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:Concatenation
+  - alice_expert:NestedFunctionCall
+  - parser:Return
+  - parser:Attribute
+  - parser:ClassDef
+  - parser:Add
+  - parser:Call
+  - parser:Str
+  - parser:arg
+  - parser:Assign
+  - parser:FunctionDef
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:Concatenation
+  - rafaella_alice:CreatingObject
+  - rafaella_alice:DefiningObjectMethod
+  - rafaella_alice:DefiningClass
+  - rafaella_alice:Printing
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CallingObjectMethod
+  - rafaella_alice:NestedFunctionCall
+runtime:
+  language: python
+  version: '3.10'
+statement: Write a program that will print out "Safiira. Nice to meet you!"
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    Safiira. Nice to meet you!
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'class Person:'
+  choices:
+  - snippet: 'class Person:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'def __init__(self, firstname, profession):'
+  choices:
+  - snippet: 'def __init__(self, firstname, profession):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: self.__name = firstname
+  choices:
+  - snippet: self.__name = firstname
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'def greet(self):'
+  choices:
+  - snippet: 'def greet(self):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: return self.__name + ". Nice to meet you!"
+  choices:
+  - snippet: return self.__name + ". Nice to meet you!"
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: safira = Person("Safiira", "biologist")
+  choices:
+  - snippet: safira = Person("Safiira", "biologist")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(safira.greet())
+  choices:
+  - snippet: print(safira.greet())
+    role: solution
+    indent: 0

@@ -1,0 +1,72 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_list_iteration_zoo_en
+source: main_en.py
+title: List Iteration Zoo
+description: Construct a program that prints out all the animals in the zoo-variable.
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:SingleForLoopIteration
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:CreatingList
+  - parser:For
+  - parser:Call
+  - parser:List
+  - parser:Assign
+  - parser:Str
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:List
+  - unspecified:Assign
+  - unspecified:Str
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CreatingList
+  - rafaella_alice:Printing
+  - rafaella_alice:SingleForLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program that prints out all the animals in the zoo-variable.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    bear
+    lion
+    camel
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: zoo = ["bear", "lion", "camel"]
+  choices:
+  - snippet: zoo = ["bear", "lion", "camel"]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for animal in zoo:'
+  choices:
+  - snippet: 'for animal in zoo:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(animal)
+  choices:
+  - snippet: print(animal)
+    role: solution
+    indent: 1

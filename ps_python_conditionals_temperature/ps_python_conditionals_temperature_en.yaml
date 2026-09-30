@@ -1,0 +1,128 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_conditionals_temperature_en
+source: main_en.py
+title: Conditionals Temperature
+description: Construct a program that prints out 'Cold', when the temperature is 15 degrees celcius or below, 'Moderate' when
+  it is over 15 degrees but no more than 25 degrees, and 'Hot' when the temperature is over 25 degrees.
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:IfElifChecking
+  - alice_expert:NestedIfChecking
+  - alice_expert:Printing
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:BooleanEvaluating
+  - parser:Int
+  - parser:Call
+  - parser:Str
+  - parser:LtE
+  - parser:If
+  - unspecified:Call
+  - unspecified:Int
+  - unspecified:Str
+  - unspecified:If
+  - unspecified:LtE
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:IfElifChecking
+  - rafaella_alice:NestedIfChecking
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program that prints out 'Cold', when the temperature is 15 degrees celcius or below, 'Moderate' when
+  it is over 15 degrees but no more than 25 degrees, and 'Hot' when the temperature is over 25 degrees.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'if temperature  < 15:'
+    nth: 1
+  choices:
+  - snippet: 'if temperature  < 15:'
+    role: solution
+    indent: 0
+  - snippet: 'if temperature  < 25:'
+    role: distractor
+    indent: 0
+  - snippet: 'if temperature  > 15:'
+    role: distractor
+    indent: 0
+  - snippet: 'if temperature  > 25:'
+    role: distractor
+    indent: 0
+- type: block
+  location:
+    snippet: 'if temperature  < 15:'
+    nth: 2
+  choices:
+  - snippet: 'if temperature  < 15:'
+    role: solution
+    indent: 0
+  - snippet: 'if temperature  < 25:'
+    role: distractor
+    indent: 0
+  - snippet: 'if temperature  > 15:'
+    role: distractor
+    indent: 0
+  - snippet: 'if temperature  > 25:'
+    role: distractor
+    indent: 0
+- type: block
+  location:
+    snippet: print("Cold")
+  choices:
+  - snippet: print("Cold")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'elif temperature < 15:'
+  choices:
+  - snippet: 'elif temperature < 15:'
+    role: solution
+    indent: 0
+  - snippet: 'elif temperature < 25:'
+    role: distractor
+    indent: 0
+  - snippet: 'elif temperature > 15:'
+    role: distractor
+    indent: 0
+  - snippet: 'elif temperature > 25:'
+    role: distractor
+    indent: 0
+- type: block
+  location:
+    snippet: print("Moderate")
+  choices:
+  - snippet: print("Moderate")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("Hot")
+  choices:
+  - snippet: print("Hot")
+    role: solution
+    indent: 0

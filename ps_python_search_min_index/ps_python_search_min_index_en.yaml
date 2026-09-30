@@ -1,0 +1,86 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_search_min_index_en
+source: main_en.py
+title: Practicing searching the index of the min element
+description: Construct a program that finds the index of the minimum element in a list. num_list is a test case where you
+  need to find the min index from. The program then needs to print the index of the minimum element.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Assign
+  - acos:Constant
+  - acos:For
+  - acos:Lt
+  - acos:If
+  - acos:Call
+  - acos:Index
+  - unspecified:For
+  - unspecified:Constant
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Lt
+  - unspecified:If
+  - unspecified:Index
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program that finds the index of the minimum element in a list. num_list is a test case where you need
+  to find the min index from. The program then needs to print the index of the minimum element.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    1
+  status: pass
+- title: Test Case 2
+  visible: true
+  stdin: []
+  stdout: |
+    4
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: index_min = 0
+  choices:
+  - snippet: index_min = 0
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for index in range(1,len(num_list)):'
+  choices:
+  - snippet: 'for index in range(1,len(num_list)):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if (num_list[index] < num_list[index_min]):'
+  choices:
+  - snippet: 'if (num_list[index] < num_list[index_min]):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: index_min = index
+  choices:
+  - snippet: index_min = index
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: print(index_min)
+  choices:
+  - snippet: print(index_min)
+    role: solution
+    indent: 0

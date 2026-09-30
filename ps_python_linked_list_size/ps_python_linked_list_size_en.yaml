@@ -1,0 +1,104 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_linked_list_size_en
+source: main_en.py
+title: Construct a function that checks the size of a linked list
+description: 'Construct a function that calculates the number of elements in a singly linked list. LinkedList class implementation
+  is given below. class Node: def __init__(self, data): self.data = data self.next = None class LinkedList: def __init__(self):
+  self.head = None def push(self, new): new_node = Node(new) new_node.next = self.head self.head = new_node'
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:While
+  - acos:Constant
+  - acos:Attribute
+  - acos:FunctionDef
+  - acos:Assign
+  - acos:Add
+  - acos:Return
+  - acos:arg
+  - unspecified:arg
+  - unspecified:Constant
+  - unspecified:Assign
+  - unspecified:Return
+  - unspecified:FunctionDef
+  - unspecified:Attribute
+  - unspecified:Add
+  - unspecified:While
+runtime:
+  language: python
+  version: '3.10'
+statement: 'Construct a function that calculates the number of elements in a singly linked list. LinkedList class implementation
+  is given below. class Node: def __init__(self, data): self.data = data self.next = None class LinkedList: def __init__(self):
+  self.head = None def push(self, new): new_node = Node(new) new_node.next = self.head self.head = new_node'
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    4
+  status: pass
+- title: Test Case 2
+  visible: true
+  stdin: []
+  stdout: |
+    0
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def get_size(linked_list):'
+  choices:
+  - snippet: 'def get_size(linked_list):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: count = 0
+  choices:
+  - snippet: count = 0
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: temp = linked_list.head
+  choices:
+  - snippet: temp = linked_list.head
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'while temp:'
+  choices:
+  - snippet: 'while temp:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: count = count + 1
+  choices:
+  - snippet: count = count + 1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: temp = temp.next
+  choices:
+  - snippet: temp = temp.next
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: return count
+  choices:
+  - snippet: return count
+    role: solution
+    indent: 1

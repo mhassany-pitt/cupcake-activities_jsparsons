@@ -1,0 +1,99 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_list_reverse7_en
+source: main_en.py
+title: Reverse the list
+description: Construct a program which creates a new list that is reverse of list [1, 2, 3, 4, 5].
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program which creates a new list that is reverse of list [1, 2, 3, 4, 5].
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    [5, 4, 3, 2, 1]
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def list_reverse(lst):'
+  choices:
+  - snippet: 'def list_reverse(lst):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: new_list = [0] * len(lst)
+  choices:
+  - snippet: new_list = [0] * len(lst)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: j = len(lst)
+  choices:
+  - snippet: j = len(lst)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for number in lst:'
+  choices:
+  - snippet: 'for number in lst:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: j = j - 1
+  choices:
+  - snippet: j = j - 1
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: new_list[j] = number
+  choices:
+  - snippet: new_list[j] = number
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: return new_list
+  choices:
+  - snippet: return new_list
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: list1 = [1, 2, 3, 4, 5]
+  choices:
+  - snippet: list1 = [1, 2, 3, 4, 5]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: list2 = list_reverse(list1)
+  choices:
+  - snippet: list2 = list_reverse(list1)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(list2)
+  choices:
+  - snippet: print(list2)
+    role: solution
+    indent: 0

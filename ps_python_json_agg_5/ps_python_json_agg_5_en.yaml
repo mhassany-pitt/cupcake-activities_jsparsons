@@ -1,0 +1,82 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_json_agg_5_en
+source: main.py
+title: JSON Aggregate 5
+description: 'You''re provided a list of aircrafts and helicopter, with manufacturer information, date of manufacture and
+  other information. Find the minimum age of all flights used in military. aircrafts = [ {"type": "Aircraft", "name": "F-22
+  Raptor", "manufacturer": "Lockheed Martin", "age": 9, "used_in": "Military"}, {"type": "Helicopter", "name": "Apache AH-64",
+  "manufacturer": "Boeing", "age": 12, "used_in": "Military"}, {"type": "Aircraft", "name": "Boeing 747", "manufacturer":
+  "Boeing", "age": 19, "used_in": "Civilian"}, {"type": "Helicopter", "name": "Black Hawk", "manufacturer": "Sikorsky", "age":
+  6, "used_in": "Military"}, {"type": "Aircraft", "name": "Airbus A380", "manufacturer": "Airbus", "age": 8, "used_in": "Civilian"},
+  {"type": "Aircraft", "name": "F-35 Lightning II", "manufacturer": "Lockheed Martin", "age": 6, "used_in": "Military"} ]'
+authors:
+- first: Rully
+  last: Hendrawan
+  email: rully@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: 'You''re provided a list of aircrafts and helicopter, with manufacturer information, date of manufacture and other
+  information. Find the minimum age of all flights used in military. aircrafts = [ {"type": "Aircraft", "name": "F-22 Raptor",
+  "manufacturer": "Lockheed Martin", "age": 9, "used_in": "Military"}, {"type": "Helicopter", "name": "Apache AH-64", "manufacturer":
+  "Boeing", "age": 12, "used_in": "Military"}, {"type": "Aircraft", "name": "Boeing 747", "manufacturer": "Boeing", "age":
+  19, "used_in": "Civilian"}, {"type": "Helicopter", "name": "Black Hawk", "manufacturer": "Sikorsky", "age": 6, "used_in":
+  "Military"}, {"type": "Aircraft", "name": "Airbus A380", "manufacturer": "Airbus", "age": 8, "used_in": "Civilian"}, {"type":
+  "Aircraft", "name": "F-35 Lightning II", "manufacturer": "Lockheed Martin", "age": 6, "used_in": "Military"} ]'
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: min_age = None
+  choices:
+  - snippet: min_age = None
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for aircraft in aircrafts:'
+  choices:
+  - snippet: 'for aircraft in aircrafts:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if aircraft["used_in"] == "Military":'
+  choices:
+  - snippet: 'if aircraft["used_in"] == "Military":'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if min_age is None or aircraft["age"] < min_age:'
+  choices:
+  - snippet: 'if min_age is None or aircraft["age"] < min_age:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: min_age = aircraft["age"]
+  choices:
+  - snippet: min_age = aircraft["age"]
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: print(f"The age of youngest military aircraft is {min_age}")
+  choices:
+  - snippet: print(f"The age of youngest military aircraft is {min_age}")
+    role: solution
+    indent: 0

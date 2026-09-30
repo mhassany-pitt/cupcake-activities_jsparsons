@@ -1,0 +1,90 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_json_agg_2_en
+source: main.py
+title: JSON Aggregate 2
+description: 'You''re provided a list of laptops in JSON list format. Find the best laptop by minimizing the price and maximizing
+  the battery life. laptops = [ {"name": "Laptop A", "price": 800, "battery_life": 6}, {"name": "Laptop B", "price": 700,
+  "battery_life": 8}, {"name": "Laptop C", "price": 750, "battery_life": 9}, {"name": "Laptop D", "price": 700, "battery_life":
+  10}, {"name": "Laptop E", "price": 700, "battery_life": 7} ]'
+authors:
+- first: Rully
+  last: Hendrawan
+  email: rully@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: 'You''re provided a list of laptops in JSON list format. Find the best laptop by minimizing the price and maximizing
+  the battery life. laptops = [ {"name": "Laptop A", "price": 800, "battery_life": 6}, {"name": "Laptop B", "price": 700,
+  "battery_life": 8}, {"name": "Laptop C", "price": 750, "battery_life": 9}, {"name": "Laptop D", "price": 700, "battery_life":
+  10}, {"name": "Laptop E", "price": 700, "battery_life": 7} ]'
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: best_laptop = laptops[0]
+  choices:
+  - snippet: best_laptop = laptops[0]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: min_price, max_battery = best_laptop["price"], best_laptop["battery_life"]
+  choices:
+  - snippet: min_price, max_battery = best_laptop["price"], best_laptop["battery_life"]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for laptop in laptops[1:]:'
+  choices:
+  - snippet: 'for laptop in laptops[1:]:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: price, battery = laptop["price"], laptop["battery_life"]
+  choices:
+  - snippet: price, battery = laptop["price"], laptop["battery_life"]
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if price < min_price or (price == min_price and battery > max_battery):'
+  choices:
+  - snippet: 'if price < min_price or (price == min_price and battery > max_battery):'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: min_price, max_battery, best_laptop = price, battery, laptop
+  choices:
+  - snippet: min_price, max_battery, best_laptop = price, battery, laptop
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print("The best laptop to buy is:")
+  choices:
+  - snippet: print("The best laptop to buy is:")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("Name:", best_laptop["name"])
+  choices:
+  - snippet: print("Name:", best_laptop["name"])
+    role: solution
+    indent: 0

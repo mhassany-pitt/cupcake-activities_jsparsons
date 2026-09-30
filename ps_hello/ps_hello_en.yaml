@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_hello_en
+source: main_en.py
+title: Hello
+description: Construct a program that prints out hello and world on separate lines.
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:Printing
+  - alice_expert:CallingLibraryFunction
+  - parser:Call
+  - parser:Str
+  - unspecified:Call
+  - unspecified:Str
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program that prints out hello and world on separate lines.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    hello
+    world
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: print("hello")
+  choices:
+  - snippet: print("hello")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("world")
+  choices:
+  - snippet: print("world")
+    role: solution
+    indent: 0

@@ -1,0 +1,113 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_fast_power1_en
+source: main_en.py
+title: 'Calculating power '
+description: Construct a program which calculates the base raised to the power of the exponent.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program which calculates the base raised to the power of the exponent.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    32
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: base = 2
+  choices:
+  - snippet: base = 2
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: exp = 5
+  choices:
+  - snippet: exp = 5
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: temp = 1
+  choices:
+  - snippet: temp = 1
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'while exp > 0:'
+  choices:
+  - snippet: 'while exp > 0:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if exp % 2 == 0:'
+  choices:
+  - snippet: 'if exp % 2 == 0:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: base = base * base
+  choices:
+  - snippet: base = base * base
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: exp = exp // 2
+  choices:
+  - snippet: exp = exp // 2
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: temp = base * temp
+  choices:
+  - snippet: temp = base * temp
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: exp = exp - 1
+  choices:
+  - snippet: exp = exp - 1
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: result = temp
+  choices:
+  - snippet: result = temp
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(result)
+  choices:
+  - snippet: print(result)
+    role: solution
+    indent: 0

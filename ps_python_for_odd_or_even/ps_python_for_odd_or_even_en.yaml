@@ -1,0 +1,95 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_for_odd_or_even_en
+source: main_en.py
+title: Odd or Even
+description: Construct a program that goes through a list of numbers and prints out whether they are odd or even.
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:SingleForLoopIteration
+  - alice_expert:FindRemainder
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:IfElseCheckingInForLoop
+  - alice_expert:BooleanEvaluating
+  - parser:For
+  - parser:Int
+  - parser:Call
+  - parser:Str
+  - parser:Mod
+  - parser:Eq
+  - parser:If
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Eq
+  - unspecified:Int
+  - unspecified:Mod
+  - unspecified:If
+  - unspecified:Str
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:FindRemainder
+  - rafaella_alice:IfElseCheckingInForLoop
+  - rafaella_alice:Printing
+  - rafaella_alice:SingleForLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program that goes through a list of numbers and prints out whether they are odd or even.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    Even
+    Even
+    Odd
+    Odd
+    Odd
+    Even
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'for number in some_list:'
+  choices:
+  - snippet: 'for number in some_list:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if number%2 == 0:'
+  choices:
+  - snippet: 'if number%2 == 0:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print("Even")
+  choices:
+  - snippet: print("Even")
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print("Odd")
+  choices:
+  - snippet: print("Odd")
+    role: solution
+    indent: 2

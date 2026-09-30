@@ -1,0 +1,76 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_string_join_en
+source: main_en.py
+title: String join
+description: Construct a program that prints out a sentence from a given list of words.
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:CapitalizeString
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:CreatingList
+  - alice_expert:Concatenation
+  - alice_expert:NestedFunctionCall
+  - parser:Attribute
+  - parser:List
+  - parser:Add
+  - parser:Call
+  - parser:Str
+  - parser:Assign
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:List
+  - unspecified:Attribute
+  - unspecified:Add
+  - unspecified:Str
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CapitalizeString
+  - rafaella_alice:Concatenation
+  - rafaella_alice:CreatingList
+  - rafaella_alice:NestedFunctionCall
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program that prints out a sentence from a given list of words.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    This is a sentence.
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: words = ["this", "is", "a", "sentence"]
+  choices:
+  - snippet: words = ["this", "is", "a", "sentence"]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: sentence = " ".join(words)
+  choices:
+  - snippet: sentence = " ".join(words)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(sentence.capitalize() + ".")
+  choices:
+  - snippet: print(sentence.capitalize() + ".")
+    role: solution
+    indent: 0

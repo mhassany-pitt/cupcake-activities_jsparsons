@@ -1,0 +1,86 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_list_to_dict_en
+source: main_en.py
+title: List to Dictionary
+description: Construct a program that prints out moo and oink, in that order.
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:AccessingDictionary
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:CreatingDictionary
+  - alice_expert:IndexingDictionary
+  - alice_expert:CreatingTuple
+  - alice_expert:CreatingList
+  - parser:Tuple
+  - parser:Attribute
+  - parser:List
+  - parser:Call
+  - parser:Str
+  - parser:Assign
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:List
+  - unspecified:Attribute
+  - unspecified:Tuple
+  - unspecified:Str
+  - rafaella_alice:AccessingDictionary
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CreatingDictionary
+  - rafaella_alice:CreatingList
+  - rafaella_alice:CreatingTuple
+  - rafaella_alice:IndexingDictionary
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program that prints out moo and oink, in that order.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    moo
+    oink
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: pairs = [("pig", "oink"), ("cow", "moo")]
+  choices:
+  - snippet: pairs = [("pig", "oink"), ("cow", "moo")]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: animals = dict(pairs)
+  choices:
+  - snippet: animals = dict(pairs)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(animals.get("cow"))
+  choices:
+  - snippet: print(animals.get("cow"))
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(animals.get("pig"))
+  choices:
+  - snippet: print(animals.get("pig"))
+    role: solution
+    indent: 0

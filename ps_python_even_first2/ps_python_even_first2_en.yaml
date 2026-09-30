@@ -1,0 +1,121 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_even_first2_en
+source: main_en.py
+title: Reorganize the list
+description: Construct a function which partition the original list of integers such that all even numbers come first and
+  all odd numbers come after them.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a function which partition the original list of integers such that all even numbers come first and all
+  odd numbers come after them.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def even_first(num_list):'
+  choices:
+  - snippet: 'def even_first(num_list):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: i = 0
+  choices:
+  - snippet: i = 0
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: j = len(num_list) - 1
+  choices:
+  - snippet: j = len(num_list) - 1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'while i < j:'
+  choices:
+  - snippet: 'while i < j:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'while i < j and num_list[i] % 2 == 0:'
+  choices:
+  - snippet: 'while i < j and num_list[i] % 2 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: i += 1
+  choices:
+  - snippet: i += 1
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'while i < j and num_list[j] % 2 != 0:'
+  choices:
+  - snippet: 'while i < j and num_list[j] % 2 != 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: j -= 1
+  choices:
+  - snippet: j -= 1
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'if i < j:'
+  choices:
+  - snippet: 'if i < j:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: temp = num_list[i]
+  choices:
+  - snippet: temp = num_list[i]
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: num_list[i] = num_list[j]
+  choices:
+  - snippet: num_list[i] = num_list[j]
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: num_list[j] = temp
+  choices:
+  - snippet: num_list[j] = temp
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: return num_list
+  choices:
+  - snippet: return num_list
+    role: solution
+    indent: 2

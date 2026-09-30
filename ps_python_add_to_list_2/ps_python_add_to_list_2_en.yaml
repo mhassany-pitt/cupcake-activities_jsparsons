@@ -1,0 +1,83 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_add_to_list_2_en
+source: main_en.py
+title: List values and references.
+description: Construct a function that add k values to the given list. The added values is k's increment (increment by 1)
+  in each iteration.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Constant
+  - acos:Add
+  - acos:For
+  - acos:Call
+  - acos:FunctionDef
+  - acos:Return
+  - acos:Attribute
+  - acos:arg
+  - acos:Assign
+  - unspecified:arg
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Constant
+  - unspecified:Return
+  - unspecified:FunctionDef
+  - unspecified:Attribute
+  - unspecified:Add
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a function that add k values to the given list. The added values is k's increment (increment by 1) in
+  each iteration.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def add(alist,k):'
+  choices:
+  - snippet: 'def add(alist,k):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for i in range(k):'
+  choices:
+  - snippet: 'for i in range(k):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: alist.append(k)
+  choices:
+  - snippet: alist.append(k)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: k=k+1
+  choices:
+  - snippet: k=k+1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: return alist
+  choices:
+  - snippet: return alist
+    role: solution
+    indent: 1

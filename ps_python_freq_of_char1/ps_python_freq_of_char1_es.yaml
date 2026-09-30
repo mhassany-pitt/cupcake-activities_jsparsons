@@ -1,0 +1,86 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_freq_of_char1_es
+source: main_es.py
+title: Frecuencia de letras
+description: Construye una funcion que cuente la frecuencia de cada caracter en la cadena dada como parametro y devuelva un
+  diccionario que contenga las frecuencias.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una funcion que cuente la frecuencia de cada caracter en la cadena dada como parametro y devuelva un
+  diccionario que contenga las frecuencias.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def frecuencia_de_caracter(cadena):'
+  choices:
+  - snippet: 'def frecuencia_de_caracter(cadena):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: num_de_caracter = {}
+  choices:
+  - snippet: num_de_caracter = {}
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for letra in cadena:'
+  choices:
+  - snippet: 'for letra in cadena:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if letra in num_de_caracter:'
+  choices:
+  - snippet: 'if letra in num_de_caracter:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: num_de_caracter[letra] += 1
+  choices:
+  - snippet: num_de_caracter[letra] += 1
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: num_de_caracter[letra] = 1
+  choices:
+  - snippet: num_de_caracter[letra] = 1
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: return num_de_caracter
+  choices:
+  - snippet: return num_de_caracter
+    role: solution
+    indent: 2

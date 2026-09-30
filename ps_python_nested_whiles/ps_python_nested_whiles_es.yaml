@@ -1,0 +1,116 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_nested_whiles_es
+source: main_es.py
+title: Practicar ciclos while anidados
+description: Construye un programa que imprima un triangulo rectangulo invertido. Supone que 'tamano' esta definido y contiene
+  un valor entero.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Call
+  - acos:Lt
+  - acos:Gt
+  - acos:Sub
+  - acos:Assign
+  - acos:While
+  - acos:Add
+  - alice_llm_rully:StringLiteral
+  - alice_llm_rully:IntegerLiteral
+  - alice_llm_rully:LogicalExpression
+  - alice_llm_rully:ComparisonExpression
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:Printing
+  - alice_llm_rully:BooleanEvaluating
+  - alice_llm_rully:TransformingToIntType
+  - alice_llm_rully:Addition
+  - alice_llm_rully:NestedWhileLoopIteration
+  - jordan_alice:ComparisonExpression
+  - jordan_alice:IntegerLiteral
+  - jordan_alice:LogicalExpression
+  - jordan_alice:SimpleAssignmentStatement
+  - jordan_alice:StringLiteral
+  - rafaella_alice:Addition
+  - rafaella_alice:NestedWhileLoopIteration
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima un triangulo rectangulo invertido. Supone que 'tamano' esta definido y contiene
+  un valor entero.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    ****
+    ***
+    **
+    *
+  status: pass
+- title: Test Case 2
+  visible: true
+  stdin: []
+  stdout: |
+    ***
+    **
+    *
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'while tamano > 0:'
+  choices:
+  - snippet: 'while tamano > 0:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: m=0
+  choices:
+  - snippet: m=0
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'while m < tamano:'
+  choices:
+  - snippet: 'while m < tamano:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print("*",end="")
+  choices:
+  - snippet: print("*",end="")
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: m=m+1
+  choices:
+  - snippet: m=m+1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: tamano=tamano-1
+  choices:
+  - snippet: tamano=tamano-1
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print()
+  choices:
+  - snippet: print()
+    role: solution
+    indent: 1

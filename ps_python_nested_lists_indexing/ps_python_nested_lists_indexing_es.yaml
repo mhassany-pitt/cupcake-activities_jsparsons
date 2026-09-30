@@ -1,0 +1,81 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_nested_lists_indexing_es
+source: main_es.py
+title: Practicar indexación de listas
+description: Construye un programa que primero imprima [[1, 2, 3], [4, 5, 6]], luego [4, 5, 6], y finalmente 6.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:Indexing2DArray
+  - alice_expert:AssigningValueVariable
+  - alice_expert:Create2DArray
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:IndexingList
+  - parser:Int
+  - parser:Call
+  - parser:List
+  - parser:Assign
+  - parser:Index
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:List
+  - unspecified:Int
+  - unspecified:Index
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:Create2DArray
+  - rafaella_alice:Indexing2DArray
+  - rafaella_alice:IndexingList
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que primero imprima [[1, 2, 3], [4, 5, 6]], luego [4, 5, 6], y finalmente 6.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    [[1, 2, 3], [4, 5, 6]]
+    [4, 5, 6]
+    6
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: algunos_elementos = [[1, 2, 3], [4, 5, 6]]
+  choices:
+  - snippet: algunos_elementos = [[1, 2, 3], [4, 5, 6]]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(algunos_elementos)
+  choices:
+  - snippet: print(algunos_elementos)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(algunos_elementos[1])
+  choices:
+  - snippet: print(algunos_elementos[1])
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(algunos_elementos[1][2])
+  choices:
+  - snippet: print(algunos_elementos[1][2])
+    role: solution
+    indent: 0

@@ -1,0 +1,107 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_nested_whiles
+source: main_en.py
+title: Practicing nested while loops
+description: Construct a program to print an upside-down right triangle. Assume that 'size' is defined, and holds an integer
+  value.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Call
+  - acos:Lt
+  - acos:Gt
+  - acos:Constant
+  - acos:Sub
+  - acos:Assign
+  - acos:While
+  - acos:Add
+  - unspecified:Gt
+  - unspecified:Sub
+  - unspecified:Constant
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Lt
+  - unspecified:Add
+  - unspecified:While
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program to print an upside-down right triangle. Assume that 'size' is defined, and holds an integer
+  value.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    ****
+    ***
+    **
+    *
+  status: pass
+- title: Test Case 2
+  visible: true
+  stdin: []
+  stdout: |
+    ***
+    **
+    *
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'while size > 0:'
+  choices:
+  - snippet: 'while size > 0:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: m=0
+  choices:
+  - snippet: m=0
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'while m < size:'
+  choices:
+  - snippet: 'while m < size:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print("*",end="")
+  choices:
+  - snippet: print("*",end="")
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: m=m+1
+  choices:
+  - snippet: m=m+1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: size=size-1
+  choices:
+  - snippet: size=size-1
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print()
+  choices:
+  - snippet: print()
+    role: solution
+    indent: 1

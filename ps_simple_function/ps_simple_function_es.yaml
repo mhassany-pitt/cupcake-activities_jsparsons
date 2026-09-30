@@ -1,0 +1,64 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_simple_function_es
+source: main_es.py
+title: Crear una función que imprima hola mundo
+description: Construye un programa que imprima Hola funciones.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:DefiningSimpleFunction
+  - alice_expert:CallingSimpleFunction
+  - alice_expert:Printing
+  - alice_expert:CallingLibraryFunction
+  - parser:Call
+  - parser:Str
+  - parser:FunctionDef
+  - unspecified:Call
+  - unspecified:FunctionDef
+  - unspecified:Str
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CallingSimpleFunction
+  - rafaella_alice:DefiningSimpleFunction
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima Hola funciones.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    Hola funciones!
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def funcion():'
+  choices:
+  - snippet: 'def funcion():'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("Hola funciones!")
+  choices:
+  - snippet: print("Hola funciones!")
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: funcion()
+  choices:
+  - snippet: funcion()
+    role: solution
+    indent: 0

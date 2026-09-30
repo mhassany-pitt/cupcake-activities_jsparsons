@@ -1,0 +1,100 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_nested_calls
+source: main_en.py
+title: Nested Calls
+description: First define a calculate function and then define double function (that returns the given value doubled). Then
+  write a program that first prints out 20 and then 36.
+authors:
+- first: Lassi
+  last: Haaranen
+  email: lassi.haaranen@aalto.fi
+  affiliation: Aalto University
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:Multiplication
+  - alice_expert:NestedFunctionCall
+  - alice_expert:Addition
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:DefiningSimpleFunction
+  - parser:Return
+  - parser:Int
+  - parser:Add
+  - parser:Call
+  - parser:FunctionDef
+  - parser:arg
+  - parser:Mult
+  - unspecified:arg
+  - unspecified:Call
+  - unspecified:Return
+  - unspecified:Int
+  - unspecified:FunctionDef
+  - unspecified:Add
+  - unspecified:Mult
+  - rafaella_alice:Addition
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:DefiningSimpleFunction
+  - rafaella_alice:Multiplication
+  - rafaella_alice:NestedFunctionCall
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: First define a calculate function and then define double function (that returns the given value doubled). Then
+  write a program that first prints out 20 and then 36.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    20
+    36
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def calculate(first, second):'
+  choices:
+  - snippet: 'def calculate(first, second):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: return second * 3 + first
+  choices:
+  - snippet: return second * 3 + first
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'def double(value):'
+  choices:
+  - snippet: 'def double(value):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: return value * 2
+  choices:
+  - snippet: return value * 2
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print(double(double(5)))
+  choices:
+  - snippet: print(double(double(5)))
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(calculate(double(3), 2 + calculate(5, 1)))
+  choices:
+  - snippet: print(calculate(double(3), 2 + calculate(5, 1)))
+    role: solution
+    indent: 0

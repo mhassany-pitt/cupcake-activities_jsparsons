@@ -1,0 +1,87 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_print_specific_element_es
+source: main_es.py
+title: Manipulación de diccionarios
+description: 'Construye un programa que imprima un coche Toyota azul. dicc_auto = {"marca": ["Ford","Lexis","Toyota"], "electrico":
+  [False, True], "ano": [2020, 2021, 2019], "colores": ["red", "white", "blue"]}'
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:List
+  - acos:Assign
+  - acos:Index
+  - acos:Call
+  - acos:Dict
+  - alice_llm_rully:CallingStandardFunction
+  - alice_llm_rully:dict()
+  - alice_llm_rully:list()
+  - alice_llm_rully:StringLiteral
+  - alice_llm_rully:IntegerLiteral
+  - alice_llm_rully:ListLiteral
+  - alice_llm_rully:DictLiteral
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:Printing
+  - alice_llm_rully:SlicingString
+  - alice_llm_rully:IndexingString
+  - alice_llm_rully:IndexingTuple
+  - alice_llm_rully:AccessingDictionary
+  - alice_llm_rully:IndexingDictionary
+  - alice_llm_rully:IndexingList
+  - unspecified:Constant
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:List
+  - unspecified:Dict
+  - unspecified:Index
+  - jordan_alice:CallingStandardFunction
+  - jordan_alice:DictLiteral
+  - jordan_alice:IntegerLiteral
+  - jordan_alice:ListLiteral
+  - jordan_alice:SimpleAssignmentStatement
+  - jordan_alice:StringLiteral
+  - rafaella_alice:AccessingDictionary
+  - rafaella_alice:IndexingDictionary
+  - rafaella_alice:IndexingList
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: 'Construye un programa que imprima un coche Toyota azul. dicc_auto = {"marca": ["Ford","Lexis","Toyota"], "electrico":
+  [False, True], "ano": [2020, 2021, 2019], "colores": ["red", "white", "blue"]}'
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: auto = dicc_auto["marca"]
+  choices:
+  - snippet: auto = dicc_auto["marca"]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: color = dicc_auto["colores"]
+  choices:
+  - snippet: color = dicc_auto["colores"]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("La marca del auto es", auto[2],"y es", color[2])
+  choices:
+  - snippet: print("La marca del auto es", auto[2],"y es", color[2])
+    role: solution
+    indent: 0

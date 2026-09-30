@@ -1,0 +1,136 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_2d_list_es
+source: main_es.py
+title: Construir un programa que trabaje con listas
+description: Construye un programa que imprima [[0, 1, 2], [3, 4, 5], [6, 7, 99]]
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Assign
+  - acos:Call
+  - acos:List
+  - acos:Attribute
+  - acos:Mult
+  - acos:Int
+  - acos:Add
+  - acos:For
+  - acos:Index
+  - alice_expert:AssigningValueVariable
+  - alice_expert:ChangingValue2DArrayElement
+  - alice_expert:CreatingList
+  - alice_expert:ForLoopWithListIndexing
+  - alice_expert:ForLoopWith
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:ChangingValueListElement
+  - alice_expert:NestedForLoopIteration
+  - alice_expert:AddingListElementWithAppend
+  - alice_expert:Multiplication
+  - alice_expert:Printing
+  - alice_expert:Create2DArray
+  - alice_expert:Addition
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:List
+  - unspecified:Int
+  - unspecified:Attribute
+  - unspecified:Add
+  - unspecified:Mult
+  - unspecified:Index
+  - rafaella_alice:AddingListElementWithAppend
+  - rafaella_alice:Addition
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:ChangingValue2DArrayElement
+  - rafaella_alice:ChangingValueListElement
+  - rafaella_alice:Create2DArray
+  - rafaella_alice:CreatingList
+  - rafaella_alice:ForLoopWith
+  - rafaella_alice:ForLoopWithListIndexing
+  - rafaella_alice:Multiplication
+  - rafaella_alice:NestedForLoopIteration
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima [[0, 1, 2], [3, 4, 5], [6, 7, 99]]
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    [[0, 1, 2], [3, 4, 5], [6, 7, 99]]
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: CANTIDAD = 3
+  choices:
+  - snippet: CANTIDAD = 3
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: lista1 = []
+  choices:
+  - snippet: lista1 = []
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for i in range(CANTIDAD):'
+  choices:
+  - snippet: 'for i in range(CANTIDAD):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: lista2 = [0] * CANTIDAD
+  choices:
+  - snippet: lista2 = [0] * CANTIDAD
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for j in range(CANTIDAD):'
+  choices:
+  - snippet: 'for j in range(CANTIDAD):'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: lista2[j] = i * CANTIDAD + j
+  choices:
+  - snippet: lista2[j] = i * CANTIDAD + j
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: lista1.append(lista2)
+  choices:
+  - snippet: lista1.append(lista2)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: lista1[2][2] = 99
+  choices:
+  - snippet: lista1[2][2] = 99
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(lista1)
+  choices:
+  - snippet: print(lista1)
+    role: solution
+    indent: 0

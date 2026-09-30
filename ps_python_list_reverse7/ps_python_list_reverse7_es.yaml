@@ -1,0 +1,130 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_list_reverse7_es
+source: main_es.py
+title: Invertir la lista
+description: Construye un programa que cree una nueva lista que sea la inversa de la lista [1, 2, 3, 4, 5].
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_llm_rully:SingleForLoopIteration
+  - alice_llm_rully:ForLoopWithListIndexing
+  - alice_llm_rully:ForLoopWith+=
+  - alice_llm_rully:CallingStandardFunction
+  - alice_llm_rully:DefiningFunctionCallingFunction
+  - alice_llm_rully:CallingFunctionCallingFunction
+  - alice_llm_rully:list()
+  - alice_llm_rully:IntegerLiteral
+  - alice_llm_rully:ListLiteral
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:CheckingForItem
+  - alice_llm_rully:FindingLength
+  - alice_llm_rully:Printing
+  - alice_llm_rully:TransformingToIntType
+  - alice_llm_rully:IndexingString
+  - alice_llm_rully:CreatingList
+  - alice_llm_rully:IndexingList
+  - jordan_alice:CallingStandardFunction
+  - jordan_alice:ForLoopWith+=
+  - jordan_alice:IntegerLiteral
+  - jordan_alice:ListLiteral
+  - jordan_alice:SimpleAssignmentStatement
+  - rafaella_alice:CallingFunctionCallingFunction
+  - rafaella_alice:CheckingForItem
+  - rafaella_alice:CreatingList
+  - rafaella_alice:DefiningFunctionCallingFunction
+  - rafaella_alice:FindingLength
+  - rafaella_alice:ForLoopWithListIndexing
+  - rafaella_alice:IndexingList
+  - rafaella_alice:Printing
+  - rafaella_alice:SingleForLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que cree una nueva lista que sea la inversa de la lista [1, 2, 3, 4, 5].
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    [5, 4, 3, 2, 1]
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def lista_invertida(lista):'
+  choices:
+  - snippet: 'def lista_invertida(lista):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: nueva_lista = [0] * len(lista)
+  choices:
+  - snippet: nueva_lista = [0] * len(lista)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: j = len(lista)
+  choices:
+  - snippet: j = len(lista)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for numero in lista:'
+  choices:
+  - snippet: 'for numero in lista:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: j = j - 1
+  choices:
+  - snippet: j = j - 1
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: nueva_lista[j] = numero
+  choices:
+  - snippet: nueva_lista[j] = numero
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: return nueva_lista
+  choices:
+  - snippet: return nueva_lista
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: lista1 = [1, 2, 3, 4, 5]
+  choices:
+  - snippet: lista1 = [1, 2, 3, 4, 5]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: lista2 = lista_invertida(lista1)
+  choices:
+  - snippet: lista2 = lista_invertida(lista1)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(lista2)
+  choices:
+  - snippet: print(lista2)
+    role: solution
+    indent: 0

@@ -1,0 +1,86 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_list_to_dict_es
+source: main_es.py
+title: Convertir una lista de tuplas en un diccionario
+description: Construye un programa que imprima mu y oink, en ese orden.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:AccessingDictionary
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:CreatingDictionary
+  - alice_expert:IndexingDictionary
+  - alice_expert:CreatingTuple
+  - alice_expert:CreatingList
+  - parser:Tuple
+  - parser:Attribute
+  - parser:List
+  - parser:Call
+  - parser:Str
+  - parser:Assign
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:List
+  - unspecified:Attribute
+  - unspecified:Tuple
+  - unspecified:Str
+  - rafaella_alice:AccessingDictionary
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CreatingDictionary
+  - rafaella_alice:CreatingList
+  - rafaella_alice:CreatingTuple
+  - rafaella_alice:IndexingDictionary
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima mu y oink, en ese orden.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    mu
+    oink
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: pares = [("cerdo", "oink"), ("vaca", "mu")]
+  choices:
+  - snippet: pares = [("cerdo", "oink"), ("vaca", "mu")]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: animales = dict(pares)
+  choices:
+  - snippet: animales = dict(pares)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(animales.get("vaca"))
+  choices:
+  - snippet: print(animales.get("vaca"))
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(animales.get("cerdo"))
+  choices:
+  - snippet: print(animales.get("cerdo"))
+    role: solution
+    indent: 0

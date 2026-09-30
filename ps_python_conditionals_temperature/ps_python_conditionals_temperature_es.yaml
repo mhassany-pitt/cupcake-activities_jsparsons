@@ -1,0 +1,128 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_conditionals_temperature_es
+source: main_es.py
+title: Practicar sentencias if...elif...else
+description: Construye un programa que imprima 'Frio' cuando la temperatura sea de 15 grados centigrados o menos, 'Moderado'
+  cuando sea mayor de 15 pero no mayor de 25 grados, y 'Caliente' cuando la temperatura sea mayor de 25 grados.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:IfElifChecking
+  - alice_expert:NestedIfChecking
+  - alice_expert:Printing
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:BooleanEvaluating
+  - parser:Int
+  - parser:Call
+  - parser:Str
+  - parser:LtE
+  - parser:If
+  - unspecified:Call
+  - unspecified:Int
+  - unspecified:Str
+  - unspecified:If
+  - unspecified:LtE
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:IfElifChecking
+  - rafaella_alice:NestedIfChecking
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima 'Frio' cuando la temperatura sea de 15 grados centigrados o menos, 'Moderado'
+  cuando sea mayor de 15 pero no mayor de 25 grados, y 'Caliente' cuando la temperatura sea mayor de 25 grados.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'if temperatura  < 15:'
+    nth: 1
+  choices:
+  - snippet: 'if temperatura  < 15:'
+    role: solution
+    indent: 0
+  - snippet: 'if temperatura  < 25:'
+    role: distractor
+    indent: 0
+  - snippet: 'if temperatura  > 15:'
+    role: distractor
+    indent: 0
+  - snippet: 'if temperatura  > 25:'
+    role: distractor
+    indent: 0
+- type: block
+  location:
+    snippet: 'if temperatura  < 15:'
+    nth: 2
+  choices:
+  - snippet: 'if temperatura  < 15:'
+    role: solution
+    indent: 0
+  - snippet: 'if temperatura  < 25:'
+    role: distractor
+    indent: 0
+  - snippet: 'if temperatura  > 15:'
+    role: distractor
+    indent: 0
+  - snippet: 'if temperatura  > 25:'
+    role: distractor
+    indent: 0
+- type: block
+  location:
+    snippet: print("Frio")
+  choices:
+  - snippet: print("Frio")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'elif temperatura < 15:'
+  choices:
+  - snippet: 'elif temperatura < 15:'
+    role: solution
+    indent: 0
+  - snippet: 'elif temperatura < 25:'
+    role: distractor
+    indent: 0
+  - snippet: 'elif temperatura > 15:'
+    role: distractor
+    indent: 0
+  - snippet: 'elif temperatura > 25:'
+    role: distractor
+    indent: 0
+- type: block
+  location:
+    snippet: print("Moderado")
+  choices:
+  - snippet: print("Moderado")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("Caliente")
+  choices:
+  - snippet: print("Caliente")
+    role: solution
+    indent: 0

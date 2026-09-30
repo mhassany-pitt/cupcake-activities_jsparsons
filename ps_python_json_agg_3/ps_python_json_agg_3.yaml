@@ -1,0 +1,65 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_json_agg_3
+source: main.py
+title: JSON Aggregate 3
+description: 'Compute and display the average (mean) age people = [ {"name": "Alpha", "age": 20}, {"name": "Beta", "age":
+  20}, {"name": "Charlie", "age": 25}, ]'
+authors:
+- first: Rully
+  last: Hendrawan
+  email: rully@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: 'Compute and display the average (mean) age people = [ {"name": "Alpha", "age": 20}, {"name": "Beta", "age": 20},
+  {"name": "Charlie", "age": 25}, ]'
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'for person in people:'
+  choices:
+  - snippet: 'for person in people:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: total_age += person["age"]
+  choices:
+  - snippet: total_age += person["age"]
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: count += 1
+  choices:
+  - snippet: count += 1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: average_age = total_age / count if count > 0 else 0
+  choices:
+  - snippet: average_age = total_age / count if count > 0 else 0
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'print(f"Average age: {average_age:.2f}")'
+  choices:
+  - snippet: 'print(f"Average age: {average_age:.2f}")'
+    role: solution
+    indent: 0

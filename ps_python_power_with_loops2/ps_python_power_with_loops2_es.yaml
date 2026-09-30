@@ -1,0 +1,135 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_power_with_loops2_es
+source: main_es.py
+title: Calcular una potencia
+description: Construye un programa que calcule la base elevada al exponente no negativo sin usar multiplicacion.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_llm_rully:IntegerLiteral
+  - alice_llm_rully:LogicalExpression
+  - alice_llm_rully:ComparisonExpression
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:Printing
+  - alice_llm_rully:IfElseChecking
+  - alice_llm_rully:IfChecking
+  - alice_llm_rully:BooleanEvaluating
+  - alice_llm_rully:Addition
+  - alice_llm_rully:Power
+  - alice_llm_rully:ForLoopWith+=
+  - alice_llm_rully:NestedForLoopIteration
+  - jordan_alice:ComparisonExpression
+  - jordan_alice:ForLoopWith+=
+  - jordan_alice:IntegerLiteral
+  - jordan_alice:SimpleAssignmentStatement
+  - rafaella_alice:Addition
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:IfChecking
+  - rafaella_alice:IfElseChecking
+  - rafaella_alice:NestedForLoopIteration
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que calcule la base elevada al exponente no negativo sin usar multiplicacion.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    32
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: base = 2
+  choices:
+  - snippet: base = 2
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: exp = 5
+  choices:
+  - snippet: exp = 5
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if(exp == 0):'
+  choices:
+  - snippet: 'if(exp == 0):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(1)
+  choices:
+  - snippet: print(1)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: resultado = base
+  choices:
+  - snippet: resultado = base
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: temp = base
+  choices:
+  - snippet: temp = base
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for i in range(1, exp):'
+  choices:
+  - snippet: 'for i in range(1, exp):'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for j in range (1, base):'
+  choices:
+  - snippet: 'for j in range (1, base):'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: resultado += temp
+  choices:
+  - snippet: resultado += temp
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: temp = resultado
+  choices:
+  - snippet: temp = resultado
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(resultado)
+  choices:
+  - snippet: print(resultado)
+    role: solution
+    indent: 2

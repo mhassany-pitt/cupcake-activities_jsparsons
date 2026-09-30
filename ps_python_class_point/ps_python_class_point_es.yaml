@@ -1,0 +1,136 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_class_point_es
+source: main_es.py
+title: Crear una clase y usar sus métodos
+description: Construye una clase Punto que tenga un metodo para calcular la distancia desde otra instancia de Punto.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:Importing
+  - alice_expert:DefiningObjectMethod
+  - alice_expert:Multiplication
+  - alice_expert:DefiningClass
+  - alice_expert:Addition
+  - alice_expert:AssigningValueVariable
+  - alice_expert:Subtraction
+  - alice_expert:CallingLibraryFunction
+  - parser:Return
+  - parser:Sub
+  - parser:Attribute
+  - parser:ClassDef
+  - parser:alias
+  - parser:Add
+  - parser:Call
+  - parser:ImportFrom
+  - parser:arg
+  - parser:Mult
+  - parser:Assign
+  - parser:FunctionDef
+  - unspecified:arg
+  - unspecified:Sub
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Return
+  - unspecified:ClassDef
+  - unspecified:FunctionDef
+  - unspecified:Attribute
+  - unspecified:Add
+  - unspecified:Mult
+  - unspecified:ImportFrom
+  - unspecified:alias
+  - rafaella_alice:Addition
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:DefiningClass
+  - rafaella_alice:DefiningObjectMethod
+  - rafaella_alice:Importing
+  - rafaella_alice:Multiplication
+  - rafaella_alice:Subtraction
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una clase Punto que tenga un metodo para calcular la distancia desde otra instancia de Punto.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+- title: Test Case 2
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: from math import sqrt
+  choices:
+  - snippet: from math import sqrt
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'class Punto:'
+  choices:
+  - snippet: 'class Punto:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'def __init__(self, loc_x, loc_y):'
+  choices:
+  - snippet: 'def __init__(self, loc_x, loc_y):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: self.x = loc_x
+  choices:
+  - snippet: self.x = loc_x
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: self.y = loc_y
+  choices:
+  - snippet: self.y = loc_y
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'def distancia_desde(self, otro_punto):'
+  choices:
+  - snippet: 'def distancia_desde(self, otro_punto):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: dist_x = self.x - otro_punto.x
+  choices:
+  - snippet: dist_x = self.x - otro_punto.x
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: dist_y = self.y - otro_punto.y
+  choices:
+  - snippet: dist_y = self.y - otro_punto.y
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: return sqrt(dist_x * dist_x + dist_y * dist_y)
+  choices:
+  - snippet: return sqrt(dist_x * dist_x + dist_y * dist_y)
+    role: solution
+    indent: 2

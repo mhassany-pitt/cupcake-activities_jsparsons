@@ -1,0 +1,239 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_divsible_by1_es
+source: main_es.py
+title: Construir un programa con múltiples sentencias if-elif
+description: Construye un programa que verifique si cada uno de los enteros del intervalo del 1 al 100 es divisible por 2,
+  5 o ambos.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_llm_rully:StringLiteral
+  - alice_llm_rully:BooleanLiteral
+  - alice_llm_rully:IntegerLiteral
+  - alice_llm_rully:LogicalExpression
+  - alice_llm_rully:ComparisonExpression
+  - alice_llm_rully:Printing
+  - alice_llm_rully:BooleanEvaluating
+  - alice_llm_rully:IfElifChecking
+  - alice_llm_rully:IfElifElseCheckingInForLoop
+  - alice_llm_rully:Addition
+  - alice_llm_rully:Division
+  - alice_llm_rully:FindRemainder
+  - alice_llm_rully:SingleForLoopIteration
+  - alice_llm_rully:CallingStandardFunction
+  - alice_llm_rully:DefiningFunctionCallingFunction
+  - alice_llm_rully:CallingFunctionCallingFunction
+  - jordan_alice:CallingStandardFunction
+  - jordan_alice:ComparisonExpression
+  - jordan_alice:IfElifElseCheckingInForLoop
+  - jordan_alice:IntegerLiteral
+  - jordan_alice:LogicalExpression
+  - jordan_alice:StringLiteral
+  - rafaella_alice:Addition
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:BooleanLiteral
+  - rafaella_alice:CallingFunctionCallingFunction
+  - rafaella_alice:DefiningFunctionCallingFunction
+  - rafaella_alice:Division
+  - rafaella_alice:FindRemainder
+  - rafaella_alice:IfElifChecking
+  - rafaella_alice:Printing
+  - rafaella_alice:SingleForLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que verifique si cada uno de los enteros del intervalo del 1 al 100 es divisible por 2, 5
+  o ambos.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    1 no es divisible por 2 ni 5
+    2 es divisible solo por 2
+    3 no es divisible por 2 ni 5
+    4 es divisible solo por 2
+    5 es divisible solo por 5
+    6 es divisible solo por 2
+    7 no es divisible por 2 ni 5
+    8 es divisible solo por 2
+    9 no es divisible por 2 ni 5
+    10 es divisible por 2 y 5
+    11 no es divisible por 2 ni 5
+    12 es divisible solo por 2
+    13 no es divisible por 2 ni 5
+    14 es divisible solo por 2
+    15 es divisible solo por 5
+    16 es divisible solo por 2
+    17 no es divisible por 2 ni 5
+    18 es divisible solo por 2
+    19 no es divisible por 2 ni 5
+    20 es divisible por 2 y 5
+    21 no es divisible por 2 ni 5
+    22 es divisible solo por 2
+    23 no es divisible por 2 ni 5
+    24 es divisible solo por 2
+    25 es divisible solo por 5
+    26 es divisible solo por 2
+    27 no es divisible por 2 ni 5
+    28 es divisible solo por 2
+    29 no es divisible por 2 ni 5
+    30 es divisible por 2 y 5
+    31 no es divisible por 2 ni 5
+    32 es divisible solo por 2
+    33 no es divisible por 2 ni 5
+    34 es divisible solo por 2
+    35 es divisible solo por 5
+    36 es divisible solo por 2
+    37 no es divisible por 2 ni 5
+    38 es divisible solo por 2
+    39 no es divisible por 2 ni 5
+    40 es divisible por 2 y 5
+    41 no es divisible por 2 ni 5
+    42 es divisible solo por 2
+    43 no es divisible por 2 ni 5
+    44 es divisible solo por 2
+    45 es divisible solo por 5
+    46 es divisible solo por 2
+    47 no es divisible por 2 ni 5
+    48 es divisible solo por 2
+    49 no es divisible por 2 ni 5
+    50 es divisible por 2 y 5
+    51 no es divisible por 2 ni 5
+    52 es divisible solo por 2
+    53 no es divisible por 2 ni 5
+    54 es divisible solo por 2
+    55 es divisible solo por 5
+    56 es divisible solo por 2
+    57 no es divisible por 2 ni 5
+    58 es divisible solo por 2
+    59 no es divisible por 2 ni 5
+    60 es divisible por 2 y 5
+    61 no es divisible por 2 ni 5
+    62 es divisible solo por 2
+    63 no es divisible por 2 ni 5
+    64 es divisible solo por 2
+    65 es divisible solo por 5
+    66 es divisible solo por 2
+    67 no es divisible por 2 ni 5
+    68 es divisible solo por 2
+    69 no es divisible por 2 ni 5
+    70 es divisible por 2 y 5
+    71 no es divisible por 2 ni 5
+    72 es divisible solo por 2
+    73 no es divisible por 2 ni 5
+    74 es divisible solo por 2
+    75 es divisible solo por 5
+    76 es divisible solo por 2
+    77 no es divisible por 2 ni 5
+    78 es divisible solo por 2
+    79 no es divisible por 2 ni 5
+    80 es divisible por 2 y 5
+    81 no es divisible por 2 ni 5
+    82 es divisible solo por 2
+    83 no es divisible por 2 ni 5
+    84 es divisible solo por 2
+    85 es divisible solo por 5
+    86 es divisible solo por 2
+    87 no es divisible por 2 ni 5
+    88 es divisible solo por 2
+    89 no es divisible por 2 ni 5
+    90 es divisible por 2 y 5
+    91 no es divisible por 2 ni 5
+    92 es divisible solo por 2
+    93 no es divisible por 2 ni 5
+    94 es divisible solo por 2
+    95 es divisible solo por 5
+    96 es divisible solo por 2
+    97 no es divisible por 2 ni 5
+    98 es divisible solo por 2
+    99 no es divisible por 2 ni 5
+    100 es divisible por 2 y 5
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def divisible_por(num):'
+  choices:
+  - snippet: 'def divisible_por(num):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for i in range(1, num + 1):'
+  choices:
+  - snippet: 'for i in range(1, num + 1):'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if i % 2 == 0 and i % 5 == 0:'
+  choices:
+  - snippet: 'if i % 2 == 0 and i % 5 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(i, "es divisible por 2 y 5")
+  choices:
+  - snippet: print(i, "es divisible por 2 y 5")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'elif i % 5 == 0:'
+  choices:
+  - snippet: 'elif i % 5 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(i, "es divisible solo por 5")
+  choices:
+  - snippet: print(i, "es divisible solo por 5")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'elif i % 2 == 0:'
+  choices:
+  - snippet: 'elif i % 2 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(i, "es divisible solo por 2")
+  choices:
+  - snippet: print(i, "es divisible solo por 2")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(i, "no es divisible por 2 ni 5")
+  choices:
+  - snippet: print(i, "no es divisible por 2 ni 5")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: divisible_por(100)
+  choices:
+  - snippet: divisible_por(100)
+    role: solution
+    indent: 0

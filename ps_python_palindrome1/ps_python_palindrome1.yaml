@@ -1,0 +1,117 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_palindrome1
+source: main_en.py
+title: Creating a function that checks if the string is a palindrome or not.
+description: Construct a function which determines whether the string given as a paramter is a palindrome. The function should
+  be case insensitive i.e. upper and lowercase letters are intepreted as being the same.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Attribute
+  - acos:Try
+  - acos:arg
+  - acos:Assign
+  - acos:Str
+  - acos:ExceptHandler
+  - acos:If
+  - acos:For
+  - acos:Eq
+  - acos:FunctionDef
+  - acos:Add
+  - acos:Call
+  - unspecified:arg
+  - unspecified:ExceptHandler
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Eq
+  - unspecified:FunctionDef
+  - unspecified:Try
+  - unspecified:Attribute
+  - unspecified:Add
+  - unspecified:If
+  - unspecified:Str
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a function which determines whether the string given as a paramter is a palindrome. The function should
+  be case insensitive i.e. upper and lowercase letters are intepreted as being the same.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def is_palindrome(str):'
+  choices:
+  - snippet: 'def is_palindrome(str):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: n_str = str.lower()
+  choices:
+  - snippet: n_str = str.lower()
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: revers_str = ""
+  choices:
+  - snippet: revers_str = ""
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for char in n_str:'
+  choices:
+  - snippet: 'for char in n_str:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: revers_str = char + revers_str
+  choices:
+  - snippet: revers_str = char + revers_str
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'if n_str == revers_str:'
+  choices:
+  - snippet: 'if n_str == revers_str:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: print("This string is a palindrome!")
+  choices:
+  - snippet: print("This string is a palindrome!")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: print("The string is not a palindrome!")
+  choices:
+  - snippet: print("The string is not a palindrome!")
+    role: solution
+    indent: 4

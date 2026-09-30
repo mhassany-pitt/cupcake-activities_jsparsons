@@ -1,0 +1,109 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_json_agg_1
+source: main.py
+title: JSON Aggregate 1
+description: 'You''re provided a list of used cars in json list format. Find the the car by minimizing the cost. cars = [
+  {"name": "Toyota Corolla", "cost": 12000}, {"name": "Honda Civic", "cost": 11000}, {"name": "Ford Focus", "cost": 9500},
+  {"name": "Chevrolet Spark", "cost": 9000}, {"name": "Hyundai Elantra", "cost": 11500} ]'
+authors:
+- first: Rully
+  last: Hendrawan
+  email: rully@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: 'You''re provided a list of used cars in json list format. Find the the car by minimizing the cost. cars = [ {"name":
+  "Toyota Corolla", "cost": 12000}, {"name": "Honda Civic", "cost": 11000}, {"name": "Ford Focus", "cost": 9500}, {"name":
+  "Chevrolet Spark", "cost": 9000}, {"name": "Hyundai Elantra", "cost": 11500} ]'
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: best_car = None
+  choices:
+  - snippet: best_car = None
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: min_cost = None
+  choices:
+  - snippet: min_cost = None
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for car in cars:'
+  choices:
+  - snippet: 'for car in cars:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if min_cost is None or car["cost"] < min_cost:'
+  choices:
+  - snippet: 'if min_cost is None or car["cost"] < min_cost:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: min_cost = car["cost"]
+  choices:
+  - snippet: min_cost = car["cost"]
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: best_car = car
+  choices:
+  - snippet: best_car = car
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'if best_car:'
+  choices:
+  - snippet: 'if best_car:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("The best car to buy is:")
+  choices:
+  - snippet: print("The best car to buy is:")
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: print("Name:", best_car["name"])
+  choices:
+  - snippet: print("Name:", best_car["name"])
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("No cars available to choose from.")
+  choices:
+  - snippet: print("No cars available to choose from.")
+    role: solution
+    indent: 2

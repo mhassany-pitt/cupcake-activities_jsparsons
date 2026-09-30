@@ -1,0 +1,207 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_divsible_by1
+source: main_en.py
+title: Construct a program with multiple if-elif statements
+description: Construct a program which checks whether each of the integers in interval from 1 to 100 is divisible by 2, 5,
+  or both.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: Construct a program which checks whether each of the integers in interval from 1 to 100 is divisible by 2, 5, or
+  both.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    1 is not divisible by 2 nor 5
+    2 is only divisible by 2
+    3 is not divisible by 2 nor 5
+    4 is only divisible by 2
+    5 is only divisible by 5
+    6 is only divisible by 2
+    7 is not divisible by 2 nor 5
+    8 is only divisible by 2
+    9 is not divisible by 2 nor 5
+    10 is divisible by 2 & 5
+    11 is not divisible by 2 nor 5
+    12 is only divisible by 2
+    13 is not divisible by 2 nor 5
+    14 is only divisible by 2
+    15 is only divisible by 5
+    16 is only divisible by 2
+    17 is not divisible by 2 nor 5
+    18 is only divisible by 2
+    19 is not divisible by 2 nor 5
+    20 is divisible by 2 & 5
+    21 is not divisible by 2 nor 5
+    22 is only divisible by 2
+    23 is not divisible by 2 nor 5
+    24 is only divisible by 2
+    25 is only divisible by 5
+    26 is only divisible by 2
+    27 is not divisible by 2 nor 5
+    28 is only divisible by 2
+    29 is not divisible by 2 nor 5
+    30 is divisible by 2 & 5
+    31 is not divisible by 2 nor 5
+    32 is only divisible by 2
+    33 is not divisible by 2 nor 5
+    34 is only divisible by 2
+    35 is only divisible by 5
+    36 is only divisible by 2
+    37 is not divisible by 2 nor 5
+    38 is only divisible by 2
+    39 is not divisible by 2 nor 5
+    40 is divisible by 2 & 5
+    41 is not divisible by 2 nor 5
+    42 is only divisible by 2
+    43 is not divisible by 2 nor 5
+    44 is only divisible by 2
+    45 is only divisible by 5
+    46 is only divisible by 2
+    47 is not divisible by 2 nor 5
+    48 is only divisible by 2
+    49 is not divisible by 2 nor 5
+    50 is divisible by 2 & 5
+    51 is not divisible by 2 nor 5
+    52 is only divisible by 2
+    53 is not divisible by 2 nor 5
+    54 is only divisible by 2
+    55 is only divisible by 5
+    56 is only divisible by 2
+    57 is not divisible by 2 nor 5
+    58 is only divisible by 2
+    59 is not divisible by 2 nor 5
+    60 is divisible by 2 & 5
+    61 is not divisible by 2 nor 5
+    62 is only divisible by 2
+    63 is not divisible by 2 nor 5
+    64 is only divisible by 2
+    65 is only divisible by 5
+    66 is only divisible by 2
+    67 is not divisible by 2 nor 5
+    68 is only divisible by 2
+    69 is not divisible by 2 nor 5
+    70 is divisible by 2 & 5
+    71 is not divisible by 2 nor 5
+    72 is only divisible by 2
+    73 is not divisible by 2 nor 5
+    74 is only divisible by 2
+    75 is only divisible by 5
+    76 is only divisible by 2
+    77 is not divisible by 2 nor 5
+    78 is only divisible by 2
+    79 is not divisible by 2 nor 5
+    80 is divisible by 2 & 5
+    81 is not divisible by 2 nor 5
+    82 is only divisible by 2
+    83 is not divisible by 2 nor 5
+    84 is only divisible by 2
+    85 is only divisible by 5
+    86 is only divisible by 2
+    87 is not divisible by 2 nor 5
+    88 is only divisible by 2
+    89 is not divisible by 2 nor 5
+    90 is divisible by 2 & 5
+    91 is not divisible by 2 nor 5
+    92 is only divisible by 2
+    93 is not divisible by 2 nor 5
+    94 is only divisible by 2
+    95 is only divisible by 5
+    96 is only divisible by 2
+    97 is not divisible by 2 nor 5
+    98 is only divisible by 2
+    99 is not divisible by 2 nor 5
+    100 is divisible by 2 & 5
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def divisible_by(num):'
+  choices:
+  - snippet: 'def divisible_by(num):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for i in range(1, num + 1):'
+  choices:
+  - snippet: 'for i in range(1, num + 1):'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if i % 2 == 0 and i % 5 == 0:'
+  choices:
+  - snippet: 'if i % 2 == 0 and i % 5 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(i, "is divisible by 2 & 5")
+  choices:
+  - snippet: print(i, "is divisible by 2 & 5")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'elif i % 5 == 0:'
+  choices:
+  - snippet: 'elif i % 5 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(i, "is only divisible by 5")
+  choices:
+  - snippet: print(i, "is only divisible by 5")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'elif i % 2 == 0:'
+  choices:
+  - snippet: 'elif i % 2 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(i, "is only divisible by 2")
+  choices:
+  - snippet: print(i, "is only divisible by 2")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(i, "is not divisible by 2 nor 5")
+  choices:
+  - snippet: print(i, "is not divisible by 2 nor 5")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: divisible_by(100)
+  choices:
+  - snippet: divisible_by(100)
+    role: solution
+    indent: 0

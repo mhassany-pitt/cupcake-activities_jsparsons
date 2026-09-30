@@ -1,0 +1,96 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_quick_sorting_es
+source: main_es.py
+title: Practicar el algoritmo de ordenación rápida (Quick Sort)
+description: 'Construye una funcion que implemente el algoritmo de ordenamiento rapido. La funcion de particion() ha sido
+  predefinida y se muestra a continuacion. Considera que datos es una lista, primero es el indice del primer elemento y ultimo
+  es el indice del ultimo elemento. def partition(data, first, last): pivot_value = data[first] left_mark = first+1 right_mark
+  = last done = False while not done: while left_mark = pivot_value: right_mark = right_mark-1 if right_mark'
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Lt
+  - acos:Sub
+  - acos:Return
+  - acos:arg
+  - acos:If
+  - acos:FunctionDef
+  - acos:Assign
+  - acos:Add
+  - acos:Call
+  - unspecified:arg
+  - unspecified:Sub
+  - unspecified:Constant
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Return
+  - unspecified:FunctionDef
+  - unspecified:Lt
+  - unspecified:Add
+  - unspecified:If
+runtime:
+  language: python
+  version: '3.10'
+statement: 'Construye una funcion que implemente el algoritmo de ordenamiento rapido. La funcion de particion() ha sido predefinida
+  y se muestra a continuacion. Considera que datos es una lista, primero es el indice del primer elemento y ultimo es el indice
+  del ultimo elemento. def partition(data, first, last): pivot_value = data[first] left_mark = first+1 right_mark = last done
+  = False while not done: while left_mark = pivot_value: right_mark = right_mark-1 if right_mark'
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    [-1, 3, 4, 5]
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def ordenamiento_rapido(datos, primero, ultimo):'
+  choices:
+  - snippet: 'def ordenamiento_rapido(datos, primero, ultimo):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if primero < ultimo:'
+  choices:
+  - snippet: 'if primero < ultimo:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: pivote = particion(datos, primero, ultimo)
+  choices:
+  - snippet: pivote = particion(datos, primero, ultimo)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: ordenamiento_rapido(datos, primero, pivote-1)
+  choices:
+  - snippet: ordenamiento_rapido(datos, primero, pivote-1)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: ordenamiento_rapido(datos, pivote+1, ultimo)
+  choices:
+  - snippet: ordenamiento_rapido(datos, pivote+1, ultimo)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: return datos
+  choices:
+  - snippet: return datos
+    role: solution
+    indent: 1

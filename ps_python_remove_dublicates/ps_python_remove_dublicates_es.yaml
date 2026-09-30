@@ -1,0 +1,98 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_remove_dublicates_es
+source: main_es.py
+title: Eliminar duplicados de una lista
+description: Construye una funcion que cree una nueva lista donde se almacenen todos los elementos excepto los duplicados
+  de la lista dada como parametro. Finalmente, la funcion debe devolver la nueva lista.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_llm_rully:list()
+  - alice_llm_rully:ListLiteral
+  - alice_llm_rully:LogicalExpression
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:CheckingForItem
+  - alice_llm_rully:BooleanEvaluating
+  - alice_llm_rully:IfCheckingInForLoop
+  - alice_llm_rully:DeletingListElement
+  - alice_llm_rully:CreatingList
+  - alice_llm_rully:AddingListElementWithAppend
+  - alice_llm_rully:SingleForLoopIteration
+  - alice_llm_rully:CallingStandardFunction
+  - alice_llm_rully:DefiningFunctionCallingFunction
+  - alice_llm_rully:CallingFunctionCallingFunction
+  - jordan_alice:CallingStandardFunction
+  - jordan_alice:ListLiteral
+  - jordan_alice:LogicalExpression
+  - jordan_alice:SimpleAssignmentStatement
+  - rafaella_alice:AddingListElementWithAppend
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingFunctionCallingFunction
+  - rafaella_alice:CheckingForItem
+  - rafaella_alice:CreatingList
+  - rafaella_alice:DefiningFunctionCallingFunction
+  - rafaella_alice:IfCheckingInForLoop
+  - rafaella_alice:SingleForLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una funcion que cree una nueva lista donde se almacenen todos los elementos excepto los duplicados de
+  la lista dada como parametro. Finalmente, la funcion debe devolver la nueva lista.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def eliminar_duplicados(lista_de_num):'
+  choices:
+  - snippet: 'def eliminar_duplicados(lista_de_num):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: nueva_lista = []
+  choices:
+  - snippet: nueva_lista = []
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for elemento in lista_de_num:'
+  choices:
+  - snippet: 'for elemento in lista_de_num:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if elemento not in nueva_lista:'
+  choices:
+  - snippet: 'if elemento not in nueva_lista:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: nueva_lista.append(elemento)
+  choices:
+  - snippet: nueva_lista.append(elemento)
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: return nueva_lista
+  choices:
+  - snippet: return nueva_lista
+    role: solution
+    indent: 2

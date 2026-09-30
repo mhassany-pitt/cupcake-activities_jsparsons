@@ -1,0 +1,91 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_calculate_function_es
+source: main_es.py
+title: Crear y llamar a una función
+description: Define una funcion que devuelva el segundo valor multiplicado por dos y sumado al primer valor. El programa debe
+  imprimir 23 al final.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:NestedFunctionCall
+  - alice_expert:Multiplication
+  - alice_expert:CallingSimpleFunction
+  - alice_expert:AssigningValueVariable
+  - alice_expert:Addition
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:DefiningSimpleFunction
+  - parser:Return
+  - parser:Int
+  - parser:Add
+  - parser:Call
+  - parser:FunctionDef
+  - parser:arg
+  - parser:Assign
+  - parser:Mult
+  - unspecified:arg
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Return
+  - unspecified:FunctionDef
+  - unspecified:Int
+  - unspecified:Add
+  - unspecified:Mult
+  - rafaella_alice:Addition
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CallingSimpleFunction
+  - rafaella_alice:DefiningSimpleFunction
+  - rafaella_alice:Multiplication
+  - rafaella_alice:NestedFunctionCall
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Define una funcion que devuelva el segundo valor multiplicado por dos y sumado al primer valor. El programa debe
+  imprimir 23 al final.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    23
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def calcular(primero, segundo):'
+  choices:
+  - snippet: 'def calcular(primero, segundo):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: return segundo * 2 + primero
+  choices:
+  - snippet: return segundo * 2 + primero
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: resultado = calcular(3, 2)
+  choices:
+  - snippet: resultado = calcular(3, 2)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(calcular(resultado, resultado + 1))
+  choices:
+  - snippet: print(calcular(resultado, resultado + 1))
+    role: solution
+    indent: 0

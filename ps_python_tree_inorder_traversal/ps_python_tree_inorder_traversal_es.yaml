@@ -1,0 +1,99 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_tree_inorder_traversal_es
+source: main_es.py
+title: Construir una función de recorrido inorder (inorden)
+description: Construye una funcion de recorrido inorder que recorra recursivamente un arbol desde el nodo izquierdo, nodo
+  raiz y nodo derecho. Almacenamos el arbol recorrido en una lista llamada res=[]. La funcion de recorrido esta dentro de
+  la clase del arbol. Considera que la clase del arbol ha sido predefinida.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Attribute
+  - acos:Add
+  - acos:Assign
+  - acos:List
+  - acos:arg
+  - acos:If
+  - acos:FunctionDef
+  - acos:Return
+  - acos:Call
+  - unspecified:arg
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:List
+  - unspecified:Return
+  - unspecified:FunctionDef
+  - unspecified:Attribute
+  - unspecified:Add
+  - unspecified:If
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una funcion de recorrido inorder que recorra recursivamente un arbol desde el nodo izquierdo, nodo raiz
+  y nodo derecho. Almacenamos el arbol recorrido en una lista llamada res=[]. La funcion de recorrido esta dentro de la clase
+  del arbol. Considera que la clase del arbol ha sido predefinida.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def recorrido_inorden(self, raiz):'
+  choices:
+  - snippet: 'def recorrido_inorden(self, raiz):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: res = []
+  choices:
+  - snippet: res = []
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'if raiz:'
+  choices:
+  - snippet: 'if raiz:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: res = self.recorrido_inorden(raiz.izquierda)
+  choices:
+  - snippet: res = self.recorrido_inorden(raiz.izquierda)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: res.append(raiz.dato)
+  choices:
+  - snippet: res.append(raiz.dato)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: res = res + self.recorrido_inorden(raiz.derecha)
+  choices:
+  - snippet: res = res + self.recorrido_inorden(raiz.derecha)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: return res
+  choices:
+  - snippet: return res
+    role: solution
+    indent: 1

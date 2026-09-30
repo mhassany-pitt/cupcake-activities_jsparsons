@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: en
+id: pp_ps_python_json_iterate_1
+source: main.py
+title: JSON Iterate 1
+description: 'Using JSON structure list all flights and their destinations flights = [ {"flight": "AI101", "source": "New
+  York", "destination": "London"}, {"flight": "BA202", "source": "New York", "destination": "London"}, {"flight": "DL303",
+  "source": "New York", "destination": "Paris"}, {"flight": "AF404", "source": "London", "destination": "Paris"}, {"flight":
+  "LH505", "source": "London", "destination": "Berlin"} ]'
+authors:
+- first: Rully
+  last: Hendrawan
+  email: rully@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: 'Using JSON structure list all flights and their destinations flights = [ {"flight": "AI101", "source": "New York",
+  "destination": "London"}, {"flight": "BA202", "source": "New York", "destination": "London"}, {"flight": "DL303", "source":
+  "New York", "destination": "Paris"}, {"flight": "AF404", "source": "London", "destination": "Paris"}, {"flight": "LH505",
+  "source": "London", "destination": "Berlin"} ]'
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'for flight in flights:'
+  choices:
+  - snippet: 'for flight in flights:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("Flight " + flight["flight"] + " to " + flight["destination"])
+  choices:
+  - snippet: print("Flight " + flight["flight"] + " to " + flight["destination"])
+    role: solution
+    indent: 0

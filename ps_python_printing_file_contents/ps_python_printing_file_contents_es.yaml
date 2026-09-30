@@ -1,0 +1,127 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_printing_file_contents_es
+source: main_es.py
+title: Practicar leer un archivo e imprimir su contenido
+description: Construye un programa que abra un archivo e imprima cada linea del archivo
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:ClosingFile
+  - alice_expert:SingleWhileLoopIteration
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:ReadingLine
+  - alice_expert:HandlingSpecificError
+  - alice_expert:Printing
+  - alice_expert:OpeningFile
+  - alice_expert:BooleanEvaluating
+  - parser:NotEq
+  - parser:Attribute
+  - parser:Assign
+  - parser:ExceptHandler
+  - parser:While
+  - parser:Call
+  - parser:Str
+  - parser:TryExcept
+  - unspecified:ExceptHandler
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Attribute
+  - unspecified:While
+  - unspecified:NotEq
+  - unspecified:Str
+  - unspecified:TryExcept
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:ClosingFile
+  - rafaella_alice:HandlingSpecificError
+  - rafaella_alice:OpeningFile
+  - rafaella_alice:Printing
+  - rafaella_alice:ReadingLine
+  - rafaella_alice:SingleWhileLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que abra un archivo e imprima cada linea del archivo
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'try:'
+  choices:
+  - snippet: 'try:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: archivo_a_leer = open(nombre_archivo, "r")
+  choices:
+  - snippet: archivo_a_leer = open(nombre_archivo, "r")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: fila = archivo_a_leer.readline()
+    nth: 1
+  choices:
+  - snippet: fila = archivo_a_leer.readline()
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'while fila != "":'
+  choices:
+  - snippet: 'while fila != "":'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(fila)
+  choices:
+  - snippet: print(fila)
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: fila = archivo_a_leer.readline()
+    nth: 2
+  choices:
+  - snippet: fila = archivo_a_leer.readline()
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: archivo_a_leer.close()
+  choices:
+  - snippet: archivo_a_leer.close()
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'except OSError:'
+  choices:
+  - snippet: 'except OSError:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("Error al leer el archivo. La ejecucion del programa termina.")
+  choices:
+  - snippet: print("Error al leer el archivo. La ejecucion del programa termina.")
+    role: solution
+    indent: 0

@@ -1,0 +1,75 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_addition_es
+source: main_es.py
+title: Practicar el orden de líneas para obtener el número correcto
+description: Construye un programa que imprima el valor 8.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:Addition
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:ChangingValueVariable
+  - alice_expert:Printing
+  - parser:Int
+  - parser:Add
+  - parser:Call
+  - parser:Assign
+  - unspecified:Int
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Add
+  - rafaella_alice:Addition
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:ChangingValueVariable
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima el valor 8.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    8
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: primero = 3
+  choices:
+  - snippet: primero = 3
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: primero = primero + 1
+  choices:
+  - snippet: primero = primero + 1
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: primero = primero + primero
+  choices:
+  - snippet: primero = primero + primero
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(primero)
+  choices:
+  - snippet: print(primero)
+    role: solution
+    indent: 0

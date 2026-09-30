@@ -1,0 +1,74 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_simple_params_es
+source: main_es.py
+title: Crear una función que reciba un número, le sume dos y lo devuelva
+description: Construye un programa que imprima 3
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:CallingSimpleFunction
+  - alice_expert:Addition
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:DefiningSimpleFunction
+  - alice_expert:NestedFunctionCall
+  - parser:Return
+  - parser:Int
+  - parser:Add
+  - parser:Call
+  - parser:arg
+  - parser:FunctionDef
+  - unspecified:arg
+  - unspecified:Call
+  - unspecified:Return
+  - unspecified:Int
+  - unspecified:FunctionDef
+  - unspecified:Add
+  - rafaella_alice:Addition
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CallingSimpleFunction
+  - rafaella_alice:DefiningSimpleFunction
+  - rafaella_alice:NestedFunctionCall
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima 3
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    3
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def sumar_dos(numero):'
+  choices:
+  - snippet: 'def sumar_dos(numero):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: return numero+2
+  choices:
+  - snippet: return numero+2
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print(sumar_dos(1))
+  choices:
+  - snippet: print(sumar_dos(1))
+    role: solution
+    indent: 0

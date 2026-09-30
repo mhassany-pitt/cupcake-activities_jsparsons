@@ -1,0 +1,147 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_palindrome1_es
+source: main_es.py
+title: Crear una función que verifique si una cadena es un palíndromo o no
+description: Construye una funcion que determine si la cadena dada como parametro es un palindromo. La funcion debe ser insensible
+  a mayusculas y minusculas.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Attribute
+  - acos:Try
+  - acos:arg
+  - acos:Assign
+  - acos:Str
+  - acos:ExceptHandler
+  - acos:If
+  - acos:For
+  - acos:Eq
+  - acos:FunctionDef
+  - acos:Add
+  - acos:Call
+  - alice_llm_rully:StringLiteral
+  - alice_llm_rully:LogicalExpression
+  - alice_llm_rully:ComparisonExpression
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:Concatenation
+  - alice_llm_rully:Printing
+  - alice_llm_rully:IfElseChecking
+  - alice_llm_rully:BooleanEvaluating
+  - alice_llm_rully:ReplacingStringContent
+  - alice_llm_rully:CreatingString
+  - alice_llm_rully:TransformingToStringType
+  - alice_llm_rully:IndexingString
+  - alice_llm_rully:ConvertStringToLowerCase
+  - alice_llm_rully:Addition
+  - alice_llm_rully:SingleForLoopIteration
+  - alice_llm_rully:DefiningFunctionCallingFunction
+  - unspecified:arg
+  - unspecified:ExceptHandler
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Eq
+  - unspecified:FunctionDef
+  - unspecified:Try
+  - unspecified:Attribute
+  - unspecified:Add
+  - unspecified:If
+  - unspecified:Str
+  - jordan_alice:ComparisonExpression
+  - jordan_alice:SimpleAssignmentStatement
+  - jordan_alice:StringLiteral
+  - rafaella_alice:Addition
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:Concatenation
+  - rafaella_alice:ConvertStringToLowerCase
+  - rafaella_alice:CreatingString
+  - rafaella_alice:DefiningFunctionCallingFunction
+  - rafaella_alice:IfElseChecking
+  - rafaella_alice:IndexingString
+  - rafaella_alice:Printing
+  - rafaella_alice:ReplacingStringContent
+  - rafaella_alice:SingleForLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una funcion que determine si la cadena dada como parametro es un palindromo. La funcion debe ser insensible
+  a mayusculas y minusculas.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def es_palindromo(cadena):'
+  choices:
+  - snippet: 'def es_palindromo(cadena):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: n_cadena = cadena.lower()
+  choices:
+  - snippet: n_cadena = cadena.lower()
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: cadena_invertida = ""
+  choices:
+  - snippet: cadena_invertida = ""
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for caracter in n_cadena:'
+  choices:
+  - snippet: 'for caracter in n_cadena:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: cadena_invertida = caracter + cadena_invertida
+  choices:
+  - snippet: cadena_invertida = caracter + cadena_invertida
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'if n_cadena == cadena_invertida:'
+  choices:
+  - snippet: 'if n_cadena == cadena_invertida:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: print("Esta cadena es un palindromo!")
+  choices:
+  - snippet: print("Esta cadena es un palindromo!")
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: print("La cadena no es un palindromo!")
+  choices:
+  - snippet: print("La cadena no es un palindromo!")
+    role: solution
+    indent: 4

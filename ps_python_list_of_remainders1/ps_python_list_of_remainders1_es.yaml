@@ -1,0 +1,152 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_list_of_remainders1_es
+source: main_es.py
+title: Construir una función que devuelva una lista de restos (módulos) del valor de entrada
+description: Construye una funcion que calcule el residuo de cada elemento de la primera lista con el elemento del mismo indice
+  en la segunda lista. Los residuos se almacenan en una nueva lista. Si el numero en la segunda lista es 0, la funcion debe
+  agregar directamente el numero 2 a la nueva lista en lugar del residuo.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_jordan:CallingFunctionCallingFunction
+  - alice_jordan:IfElseCheckingInForLoop
+  - alice_jordan:ComparisonExpression
+  - alice_jordan:FindRemainder
+  - alice_jordan:ListLiteral
+  - alice_jordan:IntegerLiteral
+  - alice_jordan:CreatingList
+  - alice_jordan:BooleanLiteral
+  - alice_jordan:FindingLength
+  - alice_jordan:Printing
+  - alice_jordan:ForLoopWithListIndexing
+  - alice_jordan:SimpleAssignmentStatement
+  - alice_jordan:AddingListElementWithAppend
+  - alice_jordan:IndexingList
+  - jordan_alice:ComparisonExpression
+  - jordan_alice:IntegerLiteral
+  - jordan_alice:ListLiteral
+  - jordan_alice:SimpleAssignmentStatement
+  - rafaella_alice:AddingListElementWithAppend
+  - rafaella_alice:BooleanLiteral
+  - rafaella_alice:CallingFunctionCallingFunction
+  - rafaella_alice:CreatingList
+  - rafaella_alice:FindingLength
+  - rafaella_alice:FindRemainder
+  - rafaella_alice:ForLoopWithListIndexing
+  - rafaella_alice:IfElseCheckingInForLoop
+  - rafaella_alice:IndexingList
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una funcion que calcule el residuo de cada elemento de la primera lista con el elemento del mismo indice
+  en la segunda lista. Los residuos se almacenan en una nueva lista. Si el numero en la segunda lista es 0, la funcion debe
+  agregar directamente el numero 2 a la nueva lista en lugar del residuo.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    [3, 1, 0, 2]
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def lista_de_residuos(lista1, lista2):'
+  choices:
+  - snippet: 'def lista_de_residuos(lista1, lista2):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: nueva_lista = []
+  choices:
+  - snippet: nueva_lista = []
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if len(lista1) == len(lista2):'
+  choices:
+  - snippet: 'if len(lista1) == len(lista2):'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for i in range(len(lista1)):'
+  choices:
+  - snippet: 'for i in range(len(lista1)):'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'if lista2[i] == 0:'
+  choices:
+  - snippet: 'if lista2[i] == 0:'
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: nueva_lista.append(2)
+  choices:
+  - snippet: nueva_lista.append(2)
+    role: solution
+    indent: 8
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: resultado = lista1[i] % lista2[i]
+  choices:
+  - snippet: resultado = lista1[i] % lista2[i]
+    role: solution
+    indent: 8
+- type: block
+  location:
+    snippet: nueva_lista.append(resultado)
+  choices:
+  - snippet: nueva_lista.append(resultado)
+    role: solution
+    indent: 8
+- type: block
+  location:
+    snippet: return nueva_lista
+  choices:
+  - snippet: return nueva_lista
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: lista1 = [19, 3, 4, 2]
+  choices:
+  - snippet: lista1 = [19, 3, 4, 2]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: lista2 = [4, 2, 1, 0]
+  choices:
+  - snippet: lista2 = [4, 2, 1, 0]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(lista_de_residuos(lista1, lista2))
+  choices:
+  - snippet: print(lista_de_residuos(lista1, lista2))
+    role: solution
+    indent: 0

@@ -1,0 +1,96 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_dict_keys_es
+source: main_es.py
+title: Iterar sobre un diccionario
+description: El diccionario almacen almacena la cantidad de ciertos articulos en bodega. Construye un programa que imprima
+  una lista de todos los articulos de los que hay mas de uno actualmente almacenado.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:SingleForLoopIteration
+  - alice_expert:AccessingDictionary
+  - alice_expert:IfCheckingInForLoop
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:CreatingDictionary
+  - alice_expert:IndexingDictionary
+  - alice_expert:BooleanEvaluating
+  - alice_expert:AssigningValueVariable
+  - parser:Index
+  - parser:Gt
+  - parser:For
+  - parser:Int
+  - parser:Dict
+  - parser:Str
+  - parser:Call
+  - parser:Assign
+  - parser:If
+  - unspecified:Gt
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Int
+  - unspecified:Dict
+  - unspecified:If
+  - unspecified:Index
+  - unspecified:Str
+  - rafaella_alice:AccessingDictionary
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CreatingDictionary
+  - rafaella_alice:IfCheckingInForLoop
+  - rafaella_alice:IndexingDictionary
+  - rafaella_alice:Printing
+  - rafaella_alice:SingleForLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: El diccionario almacen almacena la cantidad de ciertos articulos en bodega. Construye un programa que imprima una
+  lista de todos los articulos de los que hay mas de uno actualmente almacenado.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    taza
+    lampara
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'almacen = {"taza": 7, "boligrafo": 0, "lampara": 4}'
+  choices:
+  - snippet: 'almacen = {"taza": 7, "boligrafo": 0, "lampara": 4}'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for articulo in almacen:'
+  choices:
+  - snippet: 'for articulo in almacen:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if almacen[articulo] > 0:'
+  choices:
+  - snippet: 'if almacen[articulo] > 0:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print(articulo)
+  choices:
+  - snippet: print(articulo)
+    role: solution
+    indent: 2

@@ -1,0 +1,65 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_comparisons_es
+source: main_es.py
+title: Practicar el uso de comparaciones
+description: Construye un programa que imprima si la variable a es mayor que b.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:BooleanEvaluating
+  - alice_expert:AssigningValueVariable
+  - alice_expert:Printing
+  - alice_expert:CallingLibraryFunction
+  - parser:Gt
+  - parser:Call
+  - parser:Assign
+  - unspecified:Gt
+  - unspecified:Call
+  - unspecified:Assign
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima si la variable a es mayor que b.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: a_es_mayor = a < b
+  choices:
+  - snippet: a_es_mayor = a < b
+    role: solution
+    indent: 0
+  - snippet: a_es_mayor = a > b
+    role: distractor
+    indent: 0
+  - snippet: a_es_mayor = a <= b
+    role: distractor
+    indent: 0
+  - snippet: a_es_mayor = a >= b
+    role: distractor
+    indent: 0
+- type: block
+  location:
+    snippet: print(a_es_mayor)
+  choices:
+  - snippet: print(a_es_mayor)
+    role: solution
+    indent: 0

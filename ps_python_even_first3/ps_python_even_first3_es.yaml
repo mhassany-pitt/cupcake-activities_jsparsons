@@ -1,0 +1,144 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_even_first3_es
+source: main_es.py
+title: Reorganizar la lista
+description: Construye una funcion que divida la lista de enteros dada como parametro de manera que todos los numeros pares
+  vengan primero y todos los impares despues.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_llm_rully:list()
+  - alice_llm_rully:IntegerLiteral
+  - alice_llm_rully:ListLiteral
+  - alice_llm_rully:LogicalExpression
+  - alice_llm_rully:ComparisonExpression
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:FindingLength
+  - alice_llm_rully:IfElseChecking
+  - alice_llm_rully:BooleanEvaluating
+  - alice_llm_rully:IfElseCheckingInForLoop
+  - alice_llm_rully:IndexingString
+  - alice_llm_rully:CreatingList
+  - alice_llm_rully:IndexingList
+  - alice_llm_rully:AddingListElementWithAppend
+  - alice_llm_rully:Division
+  - alice_llm_rully:FindRemainder
+  - alice_llm_rully:SingleForLoopIteration
+  - alice_llm_rully:ForLoopWithListIndexing
+  - alice_llm_rully:CallingStandardFunction
+  - alice_llm_rully:DefiningFunctionCallingFunction
+  - jordan_alice:CallingStandardFunction
+  - jordan_alice:ComparisonExpression
+  - jordan_alice:IntegerLiteral
+  - jordan_alice:ListLiteral
+  - jordan_alice:SimpleAssignmentStatement
+  - rafaella_alice:AddingListElementWithAppend
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CreatingList
+  - rafaella_alice:DefiningFunctionCallingFunction
+  - rafaella_alice:Division
+  - rafaella_alice:FindingLength
+  - rafaella_alice:FindRemainder
+  - rafaella_alice:ForLoopWithListIndexing
+  - rafaella_alice:IfElseChecking
+  - rafaella_alice:IfElseCheckingInForLoop
+  - rafaella_alice:IndexingList
+  - rafaella_alice:SingleForLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una funcion que divida la lista de enteros dada como parametro de manera que todos los numeros pares
+  vengan primero y todos los impares despues.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def pares_primero(lista_num):'
+  choices:
+  - snippet: 'def pares_primero(lista_num):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: resultado = []
+  choices:
+  - snippet: resultado = []
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: impares = []
+  choices:
+  - snippet: impares = []
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for n in lista_num:'
+  choices:
+  - snippet: 'for n in lista_num:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if n % 2 == 0:'
+  choices:
+  - snippet: 'if n % 2 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: resultado.append(n)
+  choices:
+  - snippet: resultado.append(n)
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'else:'
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: impares.append(n)
+  choices:
+  - snippet: impares.append(n)
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: 'for i in range(len(impares)):'
+  choices:
+  - snippet: 'for i in range(len(impares)):'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: resultado.append(impares[i])
+  choices:
+  - snippet: resultado.append(impares[i])
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: return resultado
+  choices:
+  - snippet: return resultado
+    role: solution
+    indent: 2

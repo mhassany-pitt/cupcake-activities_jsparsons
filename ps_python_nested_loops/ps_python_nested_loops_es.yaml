@@ -1,0 +1,139 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_nested_loops_es
+source: main_es.py
+title: Construir un problema con ciclos anidados
+description: Construye un programa que primero imprima 15, luego 14, luego 12, luego 9 y finalmente 5 en lineas consecutivas.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Assign
+  - acos:Int
+  - acos:AugAssign
+  - acos:Gt
+  - acos:Sub
+  - acos:GtE
+  - acos:While
+  - acos:Str
+  - acos:Call
+  - alice_expert:NestedWhileLoopIteration
+  - alice_expert:Addition
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:BooleanEvaluating
+  - alice_expert:ChangingValueVariable
+  - alice_expert:Printing
+  - alice_expert:WhileLoopWith
+  - alice_expert:Subtraction
+  - unspecified:Gt
+  - unspecified:Sub
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:GtE
+  - unspecified:Int
+  - unspecified:While
+  - unspecified:AugAssign
+  - unspecified:Str
+  - rafaella_alice:Addition
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:ChangingValueVariable
+  - rafaella_alice:NestedWhileLoopIteration
+  - rafaella_alice:Printing
+  - rafaella_alice:Subtraction
+  - rafaella_alice:WhileLoopWith
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que primero imprima 15, luego 14, luego 12, luego 9 y finalmente 5 en lineas consecutivas.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    15
+    14
+    12
+    9
+    5
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: MAXIMO = 5
+  choices:
+  - snippet: MAXIMO = 5
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: i = 0
+  choices:
+  - snippet: i = 0
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'while i < MAXIMO:'
+  choices:
+  - snippet: 'while i < MAXIMO:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: suma = 0
+  choices:
+  - snippet: suma = 0
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: j = MAXIMO
+  choices:
+  - snippet: j = MAXIMO
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'while j > i:'
+  choices:
+  - snippet: 'while j > i:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: suma = suma + j
+  choices:
+  - snippet: suma = suma + j
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: j = j - 1
+  choices:
+  - snippet: j = j - 1
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: print(suma)
+  choices:
+  - snippet: print(suma)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: i = i + 1
+  choices:
+  - snippet: i = i + 1
+    role: solution
+    indent: 2

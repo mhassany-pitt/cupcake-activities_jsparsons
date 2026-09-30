@@ -1,0 +1,77 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_math_library_es
+source: main.py
+title: Practicar el uso de la biblioteca math y comprobar el tipo de una variable
+description: Construye un programa que acceda a math.pi y verifique su tipo.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Assign
+  - acos:Attribute
+  - acos:alias
+  - acos:Call
+  - alice_llm_rully:BooleanLiteral
+  - alice_llm_rully:FloatLiteral
+  - alice_llm_rully:LogicalExpression
+  - alice_llm_rully:ComparisonExpression
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:Importing
+  - alice_llm_rully:Printing
+  - alice_llm_rully:BooleanEvaluating
+  - alice_llm_rully:CallingStandardFunction
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Is
+  - unspecified:Attribute
+  - unspecified:Import
+  - unspecified:alias
+  - jordan_alice:CallingStandardFunction
+  - jordan_alice:ComparisonExpression
+  - jordan_alice:FloatLiteral
+  - jordan_alice:SimpleAssignmentStatement
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:BooleanLiteral
+  - rafaella_alice:Importing
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que acceda a math.pi y verifique su tipo.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    False
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: import math
+  choices:
+  - snippet: import math
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: a = math.pi
+  choices:
+  - snippet: a = math.pi
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(type(a) is int)
+  choices:
+  - snippet: print(type(a) is int)
+    role: solution
+    indent: 0

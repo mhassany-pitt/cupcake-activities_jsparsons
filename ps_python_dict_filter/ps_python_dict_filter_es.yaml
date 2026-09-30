@@ -1,0 +1,100 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_dict_filter_es
+source: main_es.py
+title: Iterar sobre elementos (items) de un diccionario
+description: Construye un programa que imprima todos los circulos que son mayores que 5.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:SingleForLoopIteration
+  - alice_expert:AccessingDictionary
+  - alice_expert:IfCheckingInForLoop
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:CreatingDictionary
+  - alice_expert:IndexingTuple
+  - alice_expert:ForLoopWithListIndexing
+  - alice_expert:CreatingString
+  - alice_expert:BooleanEvaluating
+  - alice_expert:AssigningValueVariable
+  - parser:Index
+  - parser:Gt
+  - parser:For
+  - parser:Int
+  - parser:Attribute
+  - parser:Call
+  - parser:Str
+  - parser:Dict
+  - parser:Assign
+  - parser:If
+  - unspecified:Gt
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Int
+  - unspecified:Attribute
+  - unspecified:Dict
+  - unspecified:If
+  - unspecified:Index
+  - unspecified:Str
+  - rafaella_alice:AccessingDictionary
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CreatingDictionary
+  - rafaella_alice:CreatingString
+  - rafaella_alice:ForLoopWithListIndexing
+  - rafaella_alice:IfCheckingInForLoop
+  - rafaella_alice:IndexingTuple
+  - rafaella_alice:Printing
+  - rafaella_alice:SingleForLoopIteration
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima todos los circulos que son mayores que 5.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    Circulo  azul  es mayor que 5
+    Circulo  gris  es mayor que 5
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'circulos = {"azul": 8, "rojo": 5, "gris": 7}'
+  choices:
+  - snippet: 'circulos = {"azul": 8, "rojo": 5, "gris": 7}'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for circulo in circulos.items():'
+  choices:
+  - snippet: 'for circulo in circulos.items():'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if(circulo[1] > 5):'
+  choices:
+  - snippet: 'if(circulo[1] > 5):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print("Circulo ",circulo[0], " es mayor que", 5)
+  choices:
+  - snippet: print("Circulo ",circulo[0], " es mayor que", 5)
+    role: solution
+    indent: 2

@@ -1,0 +1,80 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_find_and_square6_es
+source: main_es.py
+title: Actualizar elementos necesarios en una nueva lista
+description: Construye un programa que encuentre los numeros pares en la lista original, calcule el cuadrado de cada uno de
+  esos numeros y agregue los cuadrados a una nueva lista. El programa debe imprimir la nueva lista.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que encuentre los numeros pares en la lista original, calcule el cuadrado de cada uno de
+  esos numeros y agregue los cuadrados a una nueva lista. El programa debe imprimir la nueva lista.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    [4, 16]
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: lista1 = [1, 2, 3, 4, 5]
+  choices:
+  - snippet: lista1 = [1, 2, 3, 4, 5]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: nueva_lista = []
+  choices:
+  - snippet: nueva_lista = []
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for i in lista1:'
+  choices:
+  - snippet: 'for i in lista1:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: numero = i
+  choices:
+  - snippet: numero = i
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'if numero % 2 == 0:'
+  choices:
+  - snippet: 'if numero % 2 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: nueva_lista.append(numero * numero)
+  choices:
+  - snippet: nueva_lista.append(numero * numero)
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: print(nueva_lista)
+  choices:
+  - snippet: print(nueva_lista)
+    role: solution
+    indent: 2

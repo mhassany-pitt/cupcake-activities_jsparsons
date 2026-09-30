@@ -1,0 +1,85 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_list_reverse2_es
+source: main_es.py
+title: Invertir la lista
+description: Construye un programa que cree una nueva lista que sea la inversa de la lista original.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que cree una nueva lista que sea la inversa de la lista original.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    [5, 4, 3, 2, 1]
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: lista1 = [1, 2, 3, 4, 5]
+  choices:
+  - snippet: lista1 = [1, 2, 3, 4, 5]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: nueva_lista = []
+  choices:
+  - snippet: nueva_lista = []
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: i = 0
+  choices:
+  - snippet: i = 0
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'while i < len(lista1):'
+  choices:
+  - snippet: 'while i < len(lista1):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: elemento = lista1[i]
+  choices:
+  - snippet: elemento = lista1[i]
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: nueva_lista.insert(0, elemento)
+  choices:
+  - snippet: nueva_lista.insert(0, elemento)
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: i += 1
+  choices:
+  - snippet: i += 1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: print(nueva_lista)
+  choices:
+  - snippet: print(nueva_lista)
+    role: solution
+    indent: 0

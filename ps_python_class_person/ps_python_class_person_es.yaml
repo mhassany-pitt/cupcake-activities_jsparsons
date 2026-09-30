@@ -1,0 +1,105 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_class_person_es
+source: main_es.py
+title: Crear una clase y utilizarla
+description: Escribe un programa que imprima "Safiira. Encantado de conocerte!"
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:CallingObjectMethod
+  - alice_expert:DefiningObjectMethod
+  - alice_expert:DefiningClass
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CreatingObject
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:Printing
+  - alice_expert:Concatenation
+  - alice_expert:NestedFunctionCall
+  - parser:Return
+  - parser:Attribute
+  - parser:ClassDef
+  - parser:Add
+  - parser:Call
+  - parser:Str
+  - parser:arg
+  - parser:Assign
+  - parser:FunctionDef
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CallingObjectMethod
+  - rafaella_alice:Concatenation
+  - rafaella_alice:CreatingObject
+  - rafaella_alice:DefiningClass
+  - rafaella_alice:DefiningObjectMethod
+  - rafaella_alice:NestedFunctionCall
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Escribe un programa que imprima "Safiira. Encantado de conocerte!"
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    Safiira. Encantado de conocerte!
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'class Person:'
+  choices:
+  - snippet: 'class Person:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'def __init__(self, nombre, profesion):'
+  choices:
+  - snippet: 'def __init__(self, nombre, profesion):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: self.__nombre = nombre
+  choices:
+  - snippet: self.__nombre = nombre
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'def saludar(self):'
+  choices:
+  - snippet: 'def saludar(self):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: return self.__nombre + ". Encantado de conocerte!"
+  choices:
+  - snippet: return self.__nombre + ". Encantado de conocerte!"
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: safiira = Person("Safiira", "biologa")
+  choices:
+  - snippet: safiira = Person("Safiira", "biologa")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(safiira.saludar())
+  choices:
+  - snippet: print(safiira.saludar())
+    role: solution
+    indent: 0

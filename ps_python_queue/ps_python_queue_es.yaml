@@ -1,0 +1,175 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_queue_es
+source: main_es.py
+title: Construir una función que use una estructura de cola (Queue)
+description: Construye una funcion que use la estructura de Cola para resolver el problema de Josephus que elimina el k-esimo
+  elemento en una lista dada y devuelve el ultimo elemento restante. Todas las funciones de Cola estan predefinidas (is_empty(),
+  enqueue() y dequeue()). Tu funcion tambien debe devolver un mensaje "la lista esta vacia" si la lista dada esta vacia.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Add
+  - acos:arg
+  - acos:Return
+  - acos:Call
+  - acos:Assign
+  - acos:If
+  - acos:For
+  - acos:Attribute
+  - acos:NotEq
+  - acos:AugAssign
+  - acos:While
+  - acos:FunctionDef
+  - acos:Not
+  - acos:Index
+  - unspecified:arg
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Constant
+  - unspecified:Not
+  - unspecified:Return
+  - unspecified:FunctionDef
+  - unspecified:Attribute
+  - unspecified:While
+  - unspecified:NotEq
+  - unspecified:Add
+  - unspecified:AugAssign
+  - unspecified:If
+  - unspecified:Index
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una funcion que use la estructura de Cola para resolver el problema de Josephus que elimina el k-esimo
+  elemento en una lista dada y devuelve el ultimo elemento restante. Todas las funciones de Cola estan predefinidas (is_empty(),
+  enqueue() y dequeue()). Tu funcion tambien debe devolver un mensaje "la lista esta vacia" si la lista dada esta vacia.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def circulo(k, lista_nombres):'
+  choices:
+  - snippet: 'def circulo(k, lista_nombres):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: q = Cola()
+  choices:
+  - snippet: q = Cola()
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'if not q.is_empty():'
+  choices:
+  - snippet: 'if not q.is_empty():'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'for i in range(len(lista_nombres)):'
+  choices:
+  - snippet: 'for i in range(len(lista_nombres)):'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: q.enqueue(lista_nombres[i])
+  choices:
+  - snippet: q.enqueue(lista_nombres[i])
+    role: solution
+    indent: 3
+- type: block
+  location:
+    snippet: i = 1
+  choices:
+  - snippet: i = 1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'while q.size() != 1:'
+  choices:
+  - snippet: 'while q.size() != 1:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: temp = q.dequeue()
+  choices:
+  - snippet: temp = q.dequeue()
+    role: solution
+    indent: 3
+- type: block
+  location:
+    snippet: 'if i != k+1:'
+  choices:
+  - snippet: 'if i != k+1:'
+    role: solution
+    indent: 3
+- type: block
+  location:
+    snippet: q.enqueue(temp)
+  choices:
+  - snippet: q.enqueue(temp)
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'else:'
+    nth: 1
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 3
+- type: block
+  location:
+    snippet: i = 0
+  choices:
+  - snippet: i = 0
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: i += 1
+  choices:
+  - snippet: i += 1
+    role: solution
+    indent: 3
+- type: block
+  location:
+    snippet: 'else:'
+    nth: 2
+  choices:
+  - snippet: 'else:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: return ('la lista esta vacia!')
+  choices:
+  - snippet: return ('la lista esta vacia!')
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: return q.dequeue()
+  choices:
+  - snippet: return q.dequeue()
+    role: solution
+    indent: 1

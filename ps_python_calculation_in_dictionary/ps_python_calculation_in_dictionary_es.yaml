@@ -1,0 +1,143 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_calculation_in_dictionary_es
+source: main_es.py
+title: Cálculos con diccionarios
+description: 'Construye un programa que calcule el promedio de calificaciones de cada estudiante usando el diccionario `dicc_estudiantes`
+  que ya esta definido como sigue: studentdict = {"Lily": [90,100,100,85], "Anna": [88,87,99,100]}'
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Call
+  - acos:Attribute
+  - acos:Div
+  - acos:Add
+  - acos:AugAssign
+  - acos:Index
+  - acos:Assign
+  - acos:For
+  - alice_llm_rully:dict()
+  - alice_llm_rully:StringLiteral
+  - alice_llm_rully:IntegerLiteral
+  - alice_llm_rully:FloatLiteral
+  - alice_llm_rully:ListLiteral
+  - alice_llm_rully:TupleLiteral
+  - alice_llm_rully:DictLiteral
+  - alice_llm_rully:AugmentedAssignmentStatement
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:CheckingForItem
+  - alice_llm_rully:FindingLength
+  - alice_llm_rully:Printing
+  - alice_llm_rully:TransformingToIntType
+  - alice_llm_rully:TransformingToFloatType
+  - alice_llm_rully:IndexingString
+  - alice_llm_rully:IndexingTuple
+  - alice_llm_rully:AccessingDictionary
+  - alice_llm_rully:IndexingList
+  - alice_llm_rully:Addition
+  - alice_llm_rully:Division
+  - alice_llm_rully:ForLoopWith+=
+  - alice_llm_rully:NestedForLoopIteration
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Constant
+  - unspecified:Attribute
+  - unspecified:Div
+  - unspecified:Add
+  - unspecified:AugAssign
+  - unspecified:Index
+  - jordan_alice:AugmentedAssignmentStatement
+  - jordan_alice:DictLiteral
+  - jordan_alice:FloatLiteral
+  - jordan_alice:ForLoopWith+=
+  - jordan_alice:IntegerLiteral
+  - jordan_alice:ListLiteral
+  - jordan_alice:SimpleAssignmentStatement
+  - jordan_alice:StringLiteral
+  - rafaella_alice:AccessingDictionary
+  - rafaella_alice:Addition
+  - rafaella_alice:CheckingForItem
+  - rafaella_alice:Division
+  - rafaella_alice:FindingLength
+  - rafaella_alice:IndexingString
+  - rafaella_alice:IndexingTuple
+  - rafaella_alice:NestedForLoopIteration
+  - rafaella_alice:Printing
+  - rafaella_alice:TransformingToFloatType
+runtime:
+  language: python
+  version: '3.10'
+statement: 'Construye un programa que calcule el promedio de calificaciones de cada estudiante usando el diccionario `dicc_estudiantes`
+  que ya esta definido como sigue: studentdict = {"Lily": [90,100,100,85], "Anna": [88,87,99,100]}'
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'for item in dicc_estudiantes.items():'
+  choices:
+  - snippet: 'for item in dicc_estudiantes.items():'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: nombre=item[0]
+  choices:
+  - snippet: nombre=item[0]
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: notas=item[1]
+  choices:
+  - snippet: notas=item[1]
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: total=0
+  choices:
+  - snippet: total=0
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'for nota in notas:'
+  choices:
+  - snippet: 'for nota in notas:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: total+=nota
+  choices:
+  - snippet: total+=nota
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: promedio = total/len(notas)
+  choices:
+  - snippet: promedio = total/len(notas)
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print("El promedio de",nombre, "es",promedio)
+  choices:
+  - snippet: print("El promedio de",nombre, "es",promedio)
+    role: solution
+    indent: 1

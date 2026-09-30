@@ -1,0 +1,79 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_find_and_square3_es
+source: main_es.py
+title: Actualizar los elementos en una nueva lista
+description: Construye una funcion que encuentre los numeros pares en la lista dada como parametro, calcule el cuadrado de
+  cada uno de esos numeros y agregue los cuadrados a una nueva lista. La funcion debe devolver la nueva lista.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics: []
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una funcion que encuentre los numeros pares en la lista dada como parametro, calcule el cuadrado de cada
+  uno de esos numeros y agregue los cuadrados a una nueva lista. La funcion debe devolver la nueva lista.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def encontrar_y_elevar_al_cuadrado(lista):'
+  choices:
+  - snippet: 'def encontrar_y_elevar_al_cuadrado(lista):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: nueva_lista = []
+  choices:
+  - snippet: nueva_lista = []
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'for i in range(len(lista)):'
+  choices:
+  - snippet: 'for i in range(len(lista)):'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: numero = lista[i]
+  choices:
+  - snippet: numero = lista[i]
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: 'if numero % 2 == 0:'
+  choices:
+  - snippet: 'if numero % 2 == 0:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: nueva_lista.append(numero * numero)
+  choices:
+  - snippet: nueva_lista.append(numero * numero)
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: return nueva_lista
+  choices:
+  - snippet: return nueva_lista
+    role: solution
+    indent: 2

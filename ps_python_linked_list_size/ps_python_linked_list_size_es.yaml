@@ -1,0 +1,105 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_linked_list_size_es
+source: main_es.py
+title: Construir una función que verifique el tamaño de una lista enlazada
+description: 'Construye una funcion que calcule el numero de elementos en una lista simplemente enlazada. La implementacion
+  de la clase ListaEnlazada se da a continuacion. class Node: def __init__(self, data): self.data = data self.next = None
+  class LinkedList: def __init__(self): self.head = None def push(self, new): new_node = Node(new) new_node.next = self.head
+  self.head = new_node'
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:While
+  - acos:Attribute
+  - acos:FunctionDef
+  - acos:Assign
+  - acos:Add
+  - acos:Return
+  - acos:arg
+  - unspecified:arg
+  - unspecified:Constant
+  - unspecified:Assign
+  - unspecified:Return
+  - unspecified:FunctionDef
+  - unspecified:Attribute
+  - unspecified:Add
+  - unspecified:While
+runtime:
+  language: python
+  version: '3.10'
+statement: 'Construye una funcion que calcule el numero de elementos en una lista simplemente enlazada. La implementacion
+  de la clase ListaEnlazada se da a continuacion. class Node: def __init__(self, data): self.data = data self.next = None
+  class LinkedList: def __init__(self): self.head = None def push(self, new): new_node = Node(new) new_node.next = self.head
+  self.head = new_node'
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    4
+  status: pass
+- title: Test Case 2
+  visible: true
+  stdin: []
+  stdout: |
+    0
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def obtener_tamano(lista_enlazada):'
+  choices:
+  - snippet: 'def obtener_tamano(lista_enlazada):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: contador = 0
+  choices:
+  - snippet: contador = 0
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: temp = lista_enlazada.cabeza
+  choices:
+  - snippet: temp = lista_enlazada.cabeza
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'while temp:'
+  choices:
+  - snippet: 'while temp:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: contador = contador + 1
+  choices:
+  - snippet: contador = contador + 1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: temp = temp.siguiente
+  choices:
+  - snippet: temp = temp.siguiente
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: return contador
+  choices:
+  - snippet: return contador
+    role: solution
+    indent: 1

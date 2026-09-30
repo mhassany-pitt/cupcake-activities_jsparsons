@@ -1,0 +1,124 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_palindrome4_es
+source: main_es.py
+title: Construir una función que determine si una cadena dada como parámetro es un palíndromo
+description: Construye una funcion que verifique si la cadena es un palindromo o no. La funcion debe ser insensible a mayusculas
+  y minusculas.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Attribute
+  - acos:Try
+  - acos:arg
+  - acos:Assign
+  - acos:Str
+  - acos:ExceptHandler
+  - acos:If
+  - acos:For
+  - acos:Eq
+  - acos:FunctionDef
+  - acos:Add
+  - acos:Call
+  - unspecified:arg
+  - unspecified:ExceptHandler
+  - unspecified:For
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Eq
+  - unspecified:FunctionDef
+  - unspecified:Try
+  - unspecified:Attribute
+  - unspecified:Add
+  - unspecified:If
+  - unspecified:Str
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye una funcion que verifique si la cadena es un palindromo o no. La funcion debe ser insensible a mayusculas
+  y minusculas.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def es_palindromo(cadena):'
+  choices:
+  - snippet: 'def es_palindromo(cadena):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: i = 0
+  choices:
+  - snippet: i = 0
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: j = len(cadena) - 1
+  choices:
+  - snippet: j = len(cadena) - 1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: n_cadena = cadena.lower()
+  choices:
+  - snippet: n_cadena = cadena.lower()
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'while i < j:'
+  choices:
+  - snippet: 'while i < j:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if n_cadena[i] != n_cadena[j]:'
+  choices:
+  - snippet: 'if n_cadena[i] != n_cadena[j]:'
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: return False
+  choices:
+  - snippet: return False
+    role: solution
+    indent: 6
+- type: block
+  location:
+    snippet: i += 1
+  choices:
+  - snippet: i += 1
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: j -= 1
+  choices:
+  - snippet: j -= 1
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: return True
+  choices:
+  - snippet: return True
+    role: solution
+    indent: 2

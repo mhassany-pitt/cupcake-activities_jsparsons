@@ -1,0 +1,135 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_find_and_square2_es
+source: main_es.py
+title: Actualizar elementos necesarios en una nueva lista
+description: Construye un programa que encuentre los numeros pares en la lista original, calcule el cuadrado de cada uno de
+  esos numeros y agregue los cuadrados a una nueva lista. El programa debe imprimir la nueva lista.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_llm_rully:list()
+  - alice_llm_rully:IntegerLiteral
+  - alice_llm_rully:ListLiteral
+  - alice_llm_rully:LogicalExpression
+  - alice_llm_rully:ComparisonExpression
+  - alice_llm_rully:AugmentedAssignmentStatement
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:FindingLength
+  - alice_llm_rully:Printing
+  - alice_llm_rully:CreatingObject
+  - alice_llm_rully:BooleanEvaluating
+  - alice_llm_rully:IfCheckingInWhileLoop
+  - alice_llm_rully:IndexingString
+  - alice_llm_rully:CreatingList
+  - alice_llm_rully:IndexingList
+  - alice_llm_rully:AddingListElementWithAppend
+  - alice_llm_rully:Division
+  - alice_llm_rully:FindRemainder
+  - alice_llm_rully:Multiplication
+  - alice_llm_rully:Power
+  - alice_llm_rully:SingleWhileLoopIteration
+  - alice_llm_rully:WhileLoopWithListIndexing
+  - alice_llm_rully:CallingStandardFunction
+  - jordan_alice:AugmentedAssignmentStatement
+  - jordan_alice:CallingStandardFunction
+  - jordan_alice:ComparisonExpression
+  - jordan_alice:IntegerLiteral
+  - jordan_alice:ListLiteral
+  - jordan_alice:SimpleAssignmentStatement
+  - rafaella_alice:AddingListElementWithAppend
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CreatingList
+  - rafaella_alice:Division
+  - rafaella_alice:FindingLength
+  - rafaella_alice:FindRemainder
+  - rafaella_alice:IfCheckingInWhileLoop
+  - rafaella_alice:IndexingList
+  - rafaella_alice:Multiplication
+  - rafaella_alice:Printing
+  - rafaella_alice:SingleWhileLoopIteration
+  - rafaella_alice:WhileLoopWithListIndexing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que encuentre los numeros pares en la lista original, calcule el cuadrado de cada uno de
+  esos numeros y agregue los cuadrados a una nueva lista. El programa debe imprimir la nueva lista.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: |
+    [4, 16]
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: lista1 = [1, 2, 3, 4, 5]
+  choices:
+  - snippet: lista1 = [1, 2, 3, 4, 5]
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: nueva_lista = []
+  choices:
+  - snippet: nueva_lista = []
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: i = 0
+  choices:
+  - snippet: i = 0
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'while i < len(lista1):'
+  choices:
+  - snippet: 'while i < len(lista1):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: numero = lista1[i]
+  choices:
+  - snippet: numero = lista1[i]
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: 'if numero % 2 == 0:'
+  choices:
+  - snippet: 'if numero % 2 == 0:'
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: nueva_lista.append(numero * numero)
+  choices:
+  - snippet: nueva_lista.append(numero * numero)
+    role: solution
+    indent: 4
+- type: block
+  location:
+    snippet: i += 1
+  choices:
+  - snippet: i += 1
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: print(nueva_lista)
+  choices:
+  - snippet: print(nueva_lista)
+    role: solution
+    indent: 0

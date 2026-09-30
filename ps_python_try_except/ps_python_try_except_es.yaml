@@ -1,0 +1,132 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_try_except_es
+source: main_es.py
+title: Practicar el manejo de excepciones
+description: Construye un programa que imprima varias temperaturas en Celsius convertidas a Fahrenheit.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:BooleanEvaluating
+  - alice_expert:HandlingSpecificError
+  - alice_expert:Printing
+  - alice_expert:DefiningSimpleFunction
+  - alice_expert:IfChecking
+  - alice_expert:Multiplication
+  - alice_expert:CallingSimpleFunction
+  - alice_expert:Addition
+  - alice_expert:CallingLibraryFunction
+  - parser:Return
+  - parser:Raise
+  - parser:Int
+  - parser:Float
+  - parser:Add
+  - parser:ExceptHandler
+  - parser:Lt
+  - parser:Call
+  - parser:USub
+  - parser:Str
+  - parser:arg
+  - parser:Mult
+  - parser:TryExcept
+  - parser:FunctionDef
+  - parser:If
+  - unspecified:arg
+  - unspecified:ExceptHandler
+  - unspecified:Call
+  - unspecified:Return
+  - unspecified:Float
+  - unspecified:FunctionDef
+  - unspecified:Int
+  - unspecified:Raise
+  - unspecified:Lt
+  - unspecified:Add
+  - unspecified:Mult
+  - unspecified:If
+  - unspecified:USub
+  - unspecified:Str
+  - unspecified:TryExcept
+  - rafaella_alice:Addition
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:CallingSimpleFunction
+  - rafaella_alice:DefiningSimpleFunction
+  - rafaella_alice:HandlingSpecificError
+  - rafaella_alice:IfChecking
+  - rafaella_alice:Multiplication
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima varias temperaturas en Celsius convertidas a Fahrenheit.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: ''
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: 'def centigrados_a_fahrenheit(temp):'
+  choices:
+  - snippet: 'def centigrados_a_fahrenheit(temp):'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'if temp < -273.15:'
+  choices:
+  - snippet: 'if temp < -273.15:'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: raise ValueError("Temperatura por debajo del cero absoluto!")
+  choices:
+  - snippet: raise ValueError("Temperatura por debajo del cero absoluto!")
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: return temp*1.8+32
+  choices:
+  - snippet: return temp*1.8+32
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'try:'
+  choices:
+  - snippet: 'try:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(centigrados_a_fahrenheit(temp_a_convertir))
+  choices:
+  - snippet: print(centigrados_a_fahrenheit(temp_a_convertir))
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: 'except ValueError:'
+  choices:
+  - snippet: 'except ValueError:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("Temperatura configurada demasiado baja!")
+  choices:
+  - snippet: print("Temperatura configurada demasiado baja!")
+    role: solution
+    indent: 1

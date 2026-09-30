@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_hello_es
+source: main_es.py
+title: Imprimir hola mundo
+description: Construye un programa que imprima hola y mundo en lineas separadas.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:Printing
+  - alice_expert:CallingLibraryFunction
+  - parser:Call
+  - parser:Str
+  - unspecified:Call
+  - unspecified:Str
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima hola y mundo en lineas separadas.
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    hola
+    mundo
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: print("hola")
+  choices:
+  - snippet: print("hola")
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print("mundo")
+  choices:
+  - snippet: print("mundo")
+    role: solution
+    indent: 0

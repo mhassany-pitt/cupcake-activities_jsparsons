@@ -1,0 +1,111 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_nested_loop_2_es
+source: main_es.py
+title: Practicar el uso de ciclos while y for anidados
+description: Construye un programa que imprima una tabla de multiplicar segun el valor de tabla_tamano. Supone que tabla_tamano
+  es un entero positivo.
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - acos:Call
+  - acos:For
+  - acos:Mult
+  - alice_llm_rully:StringLiteral
+  - alice_llm_rully:IntegerLiteral
+  - alice_llm_rully:LogicalExpression
+  - alice_llm_rully:ComparisonExpression
+  - alice_llm_rully:AugmentedAssignmentStatement
+  - alice_llm_rully:SimpleAssignmentStatement
+  - alice_llm_rully:CheckingForItem
+  - alice_llm_rully:Printing
+  - alice_llm_rully:BooleanEvaluating
+  - alice_llm_rully:Addition
+  - alice_llm_rully:Multiplication
+  - alice_llm_rully:NestedWhileLoopIteration
+  - alice_llm_rully:MixedNestedLoopIteration
+  - alice_llm_rully:NestedFunctionCall
+  - alice_llm_rully:CallingStandardFunction
+  - unspecified:Mult
+  - unspecified:Constant
+  - unspecified:Call
+  - unspecified:For
+  - jordan_alice:AugmentedAssignmentStatement
+  - jordan_alice:CallingStandardFunction
+  - jordan_alice:ComparisonExpression
+  - jordan_alice:LogicalExpression
+  - jordan_alice:MixedNestedLoopIteration
+  - jordan_alice:SimpleAssignmentStatement
+  - jordan_alice:StringLiteral
+  - rafaella_alice:Addition
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CheckingForItem
+  - rafaella_alice:Multiplication
+  - rafaella_alice:Printing
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima una tabla de multiplicar segun el valor de tabla_tamano. Supone que tabla_tamano
+  es un entero positivo.
+testcases:
+- title: Test Case 1
+  visible: true
+  stdin: []
+  stdout: "1  2  \n2  4  \n"
+  status: pass
+- title: Test Case 2
+  visible: true
+  stdin: []
+  stdout: "1  2  3  \n2  4  6  \n3  6  9  \n"
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: j = 1
+  choices:
+  - snippet: j = 1
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'while j < tabla_tamano + 1:'
+  choices:
+  - snippet: 'while j < tabla_tamano + 1:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'for i in range(1, tabla_tamano + 1):'
+  choices:
+  - snippet: 'for i in range(1, tabla_tamano + 1):'
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print(i * j, " ", end = "")
+  choices:
+  - snippet: print(i * j, " ", end = "")
+    role: solution
+    indent: 2
+- type: block
+  location:
+    snippet: print()
+  choices:
+  - snippet: print()
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: j += 1
+  choices:
+  - snippet: j += 1
+    role: solution
+    indent: 1

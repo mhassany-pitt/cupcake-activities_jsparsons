@@ -1,0 +1,98 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/parsons-puzzles/0.1.0
+license: MIT
+locale: es
+id: pp_ps_python_iteration_multiplication_es
+source: main_es.py
+title: Crear un programa que compare un valor en un ciclo
+description: Construye un programa que imprima los valores 1,2,4,8 y finalmente imprima "El fin!".
+authors:
+- first: Kamil
+  last: Akhuseyinoglu
+  email: kamil@pitt.edu
+  affiliation: University of Pittsburgh
+pedagogy:
+  activity: parsons-puzzles
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - alice_expert:SingleWhileLoopIteration
+  - alice_expert:Multiplication
+  - alice_expert:AssigningValueVariable
+  - alice_expert:CallingLibraryFunction
+  - alice_expert:BooleanEvaluating
+  - alice_expert:Printing
+  - alice_expert:WhileLoopWith
+  - alice_expert:ChangingValueVariable
+  - parser:Int
+  - parser:Lt
+  - parser:While
+  - parser:Call
+  - parser:Str
+  - parser:Assign
+  - parser:Mult
+  - unspecified:Call
+  - unspecified:Assign
+  - unspecified:Int
+  - unspecified:While
+  - unspecified:Lt
+  - unspecified:Mult
+  - unspecified:Str
+  - rafaella_alice:AssigningValueVariable
+  - rafaella_alice:BooleanEvaluating
+  - rafaella_alice:CallingLibraryFunction
+  - rafaella_alice:ChangingValueVariable
+  - rafaella_alice:Multiplication
+  - rafaella_alice:Printing
+  - rafaella_alice:SingleWhileLoopIteration
+  - rafaella_alice:WhileLoopWith
+runtime:
+  language: python
+  version: '3.10'
+statement: Construye un programa que imprima los valores 1,2,4,8 y finalmente imprima "El fin!".
+testcases:
+- title: Standard Run
+  visible: true
+  stdin: []
+  stdout: |
+    1
+    2
+    4
+    8
+    El fin!
+  status: pass
+elements:
+- type: block
+  location:
+    snippet: valor = 1
+  choices:
+  - snippet: valor = 1
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: 'while valor < 9:'
+  choices:
+  - snippet: 'while valor < 9:'
+    role: solution
+    indent: 0
+- type: block
+  location:
+    snippet: print(valor)
+  choices:
+  - snippet: print(valor)
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: valor = valor * 2
+  choices:
+  - snippet: valor = valor * 2
+    role: solution
+    indent: 1
+- type: block
+  location:
+    snippet: print("El fin!")
+  choices:
+  - snippet: print("El fin!")
+    role: solution
+    indent: 0

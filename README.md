@@ -6,22 +6,18 @@ https://adapt2.sis.pitt.edu/next.course-authoring/#/catalog-v2
 
 ## Contents
 
-This repository contains **114 unique activity folders** representing **207 Parsons puzzle activities**:
+This repository contains **114 unique activity folders** representing **207 Parsons puzzle activities** under `python/`:
+- **Language Separation**: Placed under `python/`.
 - **Bilingual Structure**: Where both English and Spanish translations exist, they share the same activity folder.
 - **Differentiated Topics**: Knowledge Component topics in `pedagogy.topics` are namespaced by parser/ontology (e.g. `acos:Assign`, `alice_llm_rully:ComparisonExpression`, `jordan_alice:CallingStandardFunction`).
 - **Complete Attribution**: Full author metadata with names, academic affiliations, and university emails.
 
 ## Layout
 
-Each activity folder contains:
-- `main.py` (or `main_en.py` / `main_es.py` if python source code differs between languages)
-- `<activity_id>.yaml` (English activity conforming to Cupcake `parsons-puzzles/0.1.0`)
-- `<activity_id>_es.yaml` (Spanish activity conforming to Cupcake `parsons-puzzles/0.1.0`, when available)
-
-Example:
 ```
-ps_python_math_library/
-  ├── main.py
-  ├── ps_python_math_library.yaml
-  └── ps_python_math_library_es.yaml
+python/
+  └── ps_python_math_library/
+      ├── main.py
+      ├── ps_python_math_library.yaml
+      └── ps_python_math_library_es.yaml
 ```

@@ -53,7 +53,6 @@ testcases:
     4 3 1
     4 3 2
     El numero total de combinaciones de 3 digitos es 24
-  status: pass
 elements:
 - type: block
   location:

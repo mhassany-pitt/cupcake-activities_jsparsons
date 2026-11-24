@@ -46,13 +46,11 @@ testcases:
   visible: true
   stdin: []
   stdout: ''
-  status: pass
 - title: Test Case 2
   visible: true
   stdin: []
   stdout: |
     Solo se pueden sumar numeros.
-  status: pass
 elements:
 - type: block
   location:

@@ -54,7 +54,6 @@ testcases:
   stdout: |
     mu
     oink
-  status: pass
 elements:
 - type: block
   location:

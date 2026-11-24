@@ -56,7 +56,6 @@ testcases:
     Odd
     Odd
     Even
-  status: pass
 elements:
 - type: block
   location:

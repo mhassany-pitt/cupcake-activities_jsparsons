@@ -27,7 +27,6 @@ testcases:
   stdin: []
   stdout: |
     This string is a palindrome!
-  status: pass
 elements:
 - type: block
   location:

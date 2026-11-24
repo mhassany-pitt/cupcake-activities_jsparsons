@@ -47,7 +47,6 @@ testcases:
     bear
     lion
     camel
-  status: pass
 elements:
 - type: block
   location:

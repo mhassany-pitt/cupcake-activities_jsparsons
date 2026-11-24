@@ -27,19 +27,16 @@ testcases:
   stdin: []
   stdout: |
     True
-  status: pass
 - title: Test Case 2
   visible: true
   stdin: []
   stdout: |
     False
-  status: pass
 - title: Test Case 3
   visible: true
   stdin: []
   stdout: |
     True
-  status: pass
 elements:
 - type: block
   location:

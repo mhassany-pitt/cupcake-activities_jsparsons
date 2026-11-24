@@ -64,7 +64,6 @@ testcases:
   stdout: |
     cup
     lamp
-  status: pass
 elements:
 - type: block
   location:

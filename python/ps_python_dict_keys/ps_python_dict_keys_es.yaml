@@ -64,7 +64,6 @@ testcases:
   stdout: |
     taza
     lampara
-  status: pass
 elements:
 - type: block
   location:

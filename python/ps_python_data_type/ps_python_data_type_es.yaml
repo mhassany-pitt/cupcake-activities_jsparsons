@@ -32,7 +32,6 @@ testcases:
   stdin: []
   stdout: |
     <class 'float'>
-  status: pass
 elements:
 - type: block
   location:

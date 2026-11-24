@@ -69,7 +69,6 @@ testcases:
   visible: true
   stdin: []
   stdout: ''
-  status: pass
 elements:
 - type: block
   location:

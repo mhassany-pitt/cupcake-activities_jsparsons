@@ -53,7 +53,6 @@ testcases:
     (4, 3, 1)
     (4, 3, 2)
     ('The total number of 3 digit combinations is', 24)
-  status: pass
 elements:
 - type: block
   location:

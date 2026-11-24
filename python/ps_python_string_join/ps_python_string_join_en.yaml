@@ -51,7 +51,6 @@ testcases:
   stdin: []
   stdout: |
     This is a sentence.
-  status: pass
 elements:
 - type: block
   location:

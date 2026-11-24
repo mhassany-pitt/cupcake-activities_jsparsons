@@ -52,7 +52,6 @@ testcases:
   stdin: []
   stdout: |
     Safiira. Nice to meet you!
-  status: pass
 elements:
 - type: block
   location:

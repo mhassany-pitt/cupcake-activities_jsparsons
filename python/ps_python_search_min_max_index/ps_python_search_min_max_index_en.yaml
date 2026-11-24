@@ -45,13 +45,11 @@ testcases:
   stdin: []
   stdout: |
     2 5
-  status: pass
 - title: Test Case 2
   visible: true
   stdin: []
   stdout: |
     3 4
-  status: pass
 elements:
 - type: block
   location:

@@ -39,7 +39,6 @@ testcases:
   stdin: []
   stdout: |
     Hello functions!
-  status: pass
 elements:
 - type: block
   location:

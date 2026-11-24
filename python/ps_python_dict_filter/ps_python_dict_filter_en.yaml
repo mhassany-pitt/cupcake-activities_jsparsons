@@ -68,7 +68,6 @@ testcases:
   stdout: |
     blue circle is larger than 5
     grey circle is larger than 5
-  status: pass
 elements:
 - type: block
   location:

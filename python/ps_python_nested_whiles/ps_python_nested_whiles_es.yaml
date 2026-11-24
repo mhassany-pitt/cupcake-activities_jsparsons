@@ -55,7 +55,6 @@ testcases:
     ***
     **
     *
-  status: pass
 - title: Test Case 2
   visible: true
   stdin: []
@@ -63,7 +62,6 @@ testcases:
     ***
     **
     *
-  status: pass
 elements:
 - type: block
   location:

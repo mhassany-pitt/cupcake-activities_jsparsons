@@ -27,7 +27,6 @@ testcases:
   stdin: []
   stdout: |
     Esta cadena es un palindromo!
-  status: pass
 elements:
 - type: block
   location:

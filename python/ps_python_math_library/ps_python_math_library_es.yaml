@@ -52,7 +52,6 @@ testcases:
   stdin: []
   stdout: |
     False
-  status: pass
 elements:
 - type: block
   location:

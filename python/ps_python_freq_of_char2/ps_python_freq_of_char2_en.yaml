@@ -27,7 +27,6 @@ testcases:
   stdin: []
   stdout: |
     {'S': 1, 'u': 1, 'm': 2, 'e': 1, 'r': 1}
-  status: pass
 elements:
 - type: block
   location:

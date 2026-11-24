@@ -26,12 +26,10 @@ testcases:
   visible: true
   stdin: []
   stdout: "1  2  \n2  4  \n"
-  status: pass
 - title: Test Case 2
   visible: true
   stdin: []
   stdout: "1  2  3  \n2  4  6  \n3  6  9  \n"
-  status: pass
 elements:
 - type: block
   location:

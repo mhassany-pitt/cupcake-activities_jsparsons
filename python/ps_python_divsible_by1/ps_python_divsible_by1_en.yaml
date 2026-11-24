@@ -126,7 +126,6 @@ testcases:
     98 is only divisible by 2
     99 is not divisible by 2 nor 5
     100 is divisible by 2 & 5
-  status: pass
 elements:
 - type: block
   location:

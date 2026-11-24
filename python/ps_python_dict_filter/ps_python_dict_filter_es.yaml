@@ -68,7 +68,6 @@ testcases:
   stdout: |
     Circulo  azul  es mayor que 5
     Circulo  gris  es mayor que 5
-  status: pass
 elements:
 - type: block
   location:

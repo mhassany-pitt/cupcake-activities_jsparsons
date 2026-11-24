@@ -34,7 +34,6 @@ testcases:
   stdout: |
     hola
     mundo
-  status: pass
 elements:
 - type: block
   location:

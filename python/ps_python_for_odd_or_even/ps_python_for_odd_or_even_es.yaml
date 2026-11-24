@@ -56,7 +56,6 @@ testcases:
     Impar
     Impar
     Par
-  status: pass
 elements:
 - type: block
   location:

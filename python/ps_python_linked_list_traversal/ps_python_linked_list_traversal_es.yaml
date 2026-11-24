@@ -45,12 +45,10 @@ testcases:
   visible: true
   stdin: []
   stdout: 'hello world world hello '
-  status: pass
 - title: Test Case 2
   visible: true
   stdin: []
   stdout: '8 6 4 4 6 8 '
-  status: pass
 elements:
 - type: block
   location:

@@ -47,7 +47,6 @@ testcases:
     oso
     leon
     camello
-  status: pass
 elements:
 - type: block
   location:

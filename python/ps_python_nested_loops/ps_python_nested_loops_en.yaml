@@ -65,7 +65,6 @@ testcases:
     12
     9
     5
-  status: pass
 elements:
 - type: block
   location:

@@ -65,7 +65,6 @@ testcases:
   stdin: []
   stdout: |
     [4, 16]
-  status: pass
 elements:
 - type: block
   location:

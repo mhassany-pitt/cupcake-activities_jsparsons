@@ -29,7 +29,6 @@ testcases:
     4
     8
     The end!
-  status: pass
 elements:
 - type: block
   location:

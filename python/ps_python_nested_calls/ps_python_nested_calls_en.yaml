@@ -54,7 +54,6 @@ testcases:
   stdout: |
     20
     36
-  status: pass
 elements:
 - type: block
   location:

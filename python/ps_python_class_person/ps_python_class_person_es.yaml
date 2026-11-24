@@ -52,7 +52,6 @@ testcases:
   stdin: []
   stdout: |
     Safiira. Encantado de conocerte!
-  status: pass
 elements:
 - type: block
   location:

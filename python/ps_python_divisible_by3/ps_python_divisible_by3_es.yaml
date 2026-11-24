@@ -32,7 +32,6 @@ testcases:
     [5, 15, 25, 35, 45]
     divisible por 2 y 5:
     [10, 20, 30, 40, 50]
-  status: pass
 elements:
 - type: block
   location:

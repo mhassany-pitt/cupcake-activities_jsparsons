@@ -42,13 +42,11 @@ testcases:
   stdin: []
   stdout: |
     Juan 85
-  status: pass
 - title: Test Case 2
   visible: true
   stdin: []
   stdout: |
     Sara 99
-  status: pass
 elements:
 - type: block
   location:

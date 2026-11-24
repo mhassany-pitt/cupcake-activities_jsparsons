@@ -40,13 +40,11 @@ testcases:
   stdin: []
   stdout: |
     1
-  status: pass
 - title: Test Case 2
   visible: true
   stdin: []
   stdout: |
     4
-  status: pass
 elements:
 - type: block
   location:
